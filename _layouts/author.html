@@ -1,0 +1,25 @@
+---
+layout: default
+---
+
+<section class="width-100-pc mt-3 pt-2">
+    <div class="maxwidth-sl mx-auto wrapper">
+        <div class="d-flx flex-dir-col al-i-c">
+            <img class="avatar radius-c" src="{{ page.image }}" alt="">
+            <h1 class="name">{{ page.title }}</h1>
+            <p class="bio">{{ page.blurb }}</p>
+        </div>
+    </div>
+</section>
+<section class="width-100-pc mt-3 pt-2">
+    <div class="maxwidth-sl mx-auto wrapper">
+        <div class="grid is-multi-col mostly-3">
+            {% assign posts = site.posts | where: 'author', page.title %}
+            {% for post in posts %}
+                {% include components/blog-post.html %}
+            {% endfor %}
+        </div>
+    </div>
+</section>
+
+

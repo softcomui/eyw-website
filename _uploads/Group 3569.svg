@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 69 69">
+  <defs>
+    <style>
+      .cls-1, .cls-3 {
+        fill: none;
+      }
+
+      .cls-1 {
+        stroke: #fff;
+        stroke-width: 3.5px;
+      }
+
+      .cls-2 {
+        stroke: none;
+      }
+    </style>
+  </defs>
+  <g id="Group_3569" data-name="Group 3569" transform="translate(-897 -403)">
+    <g id="Ellipse_490" data-name="Ellipse 490" class="cls-1" transform="translate(897 403)">
+      <circle class="cls-2" cx="34.5" cy="34.5" r="34.5"/>
+      <circle class="cls-3" cx="34.5" cy="34.5" r="32.75"/>
+    </g>
+    <path id="play-button_2_" data-name="play-button (2)" class="cls-1" d="M23.845,12.108l-17.4-12A.6.6,0,0,0,5.5.6V24.605a.6.6,0,0,0,.941.494l17.4-12a.6.6,0,0,0,0-.988Z" transform="matrix(1, -0.017, 0.017, 1, 918.282, 425.26)"/>
+  </g>
+</svg>

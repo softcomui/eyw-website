@@ -1,0 +1,81 @@
+// 
+    // Grid
+
+    // @package hdy
+    // @author  Kabolobari Benakole <i@kb.life>
+
+.grid
+    display:                        grid
+    grid-template-columns:          repeat(12, 1fr)
+    grid-gap:                       $space-sm
+    &.is-multi-col.mostly-2
+        grid-template-columns:      repeat(auto-fill, minmax(314.3px, 1fr))
+        @media #{ $largeup }
+            grid-template-columns:  repeat(auto-fill, minmax(372px, 1fr))
+    &.is-multi-col.mostly-3
+        grid-template-columns:      repeat(auto-fill, minmax(308px, 1fr))
+    .col-12
+        grid-column:                1 / 13
+    @media #{ $smallup }
+        .col-6-sm
+            grid-column:            1 / 7
+            &.offset-6-cols-from-left
+                grid-column:        7 /13
+    @media #{ $mediumup }
+        .col-4-md
+            grid-column:            1 / 9
+            &.offset-8-cols-from-left
+                grid-column:        9 /13
+        .col-8-md
+            grid-column:            1 / 9
+
+.grid-2
+    display:                        grid
+    grid-template-columns:          1fr 1fr
+.gg
+    grid-gap:                       30px
+
+.grid-logos
+    display:                        grid
+    grid-gap:                       20px
+    grid-template-columns:          repeat(auto-fill, 110px)
+
+.grid-container
+    display: grid
+    grid-template-columns:          1fr
+    grid-gap:                       10px
+    @media #{ $smallup }
+        display: grid
+        grid-template-columns:          repeat(2, 1fr)
+        grid-gap:                       10px
+        .post
+            min-height:                 180px
+    @media #{ $mediumup }
+        display: grid
+        grid-template-columns:          repeat(3, 1fr)
+        grid-gap:                       10px
+        .post
+            min-height:                 180px
+        .post:nth-child(10n + 1), .post:nth-child(10n + 8)
+            grid-row:                   span 2
+    
+.gallery-container
+    display: grid
+    grid-template-columns:          1fr
+    grid-gap:                       10px
+    @media #{ $smallup }
+        display: grid
+        grid-template-columns:          repeat(2, 1fr)
+        grid-gap:                       10px
+        .post
+            min-height:                 180px
+    @media #{ $mediumup }
+        display: grid
+        grid-template-columns:          repeat(3, 1fr)
+        grid-gap:                       10px
+        .post
+            height:                 180px
+            img
+                height:             100%
+                object-fit:         cover
+

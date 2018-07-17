@@ -1,0 +1,207 @@
+---
+layout: default
+---
+
+{% if page.has_small_banner %}
+    <section class="width-100-pc mt-3 pt-2">
+        <div class="maxwidth-sl mx-auto wrapper">
+            <div class="pos-r py-2 mt-2">
+                <img src="{{ page.bg_image }}" class="absolute-zero bg-image" alt="">
+                <div class="absolute-zero bg-gradient"></div>
+                <div class="page-content py-3 wrapper-x d-flx flex-dir-col al-i-c">
+                    <h1 class="co-white">{{ page.title }}</h1>
+                    <p class="co-whitesmoke nanotext py-h">{{ page.description }}</p>
+                    {% if page.has_form %}
+                        <form action="">
+                            <label class="d-flx radius-50">
+                                <input type="text" placeholder="Enter Phone Number" autofocus>
+                                <button class="eyowo-button radius-50 microtext">GET PAID</button>
+                            </label>
+                        </form>
+                    {% endif %}
+                </div>
+            </div>
+        </div>
+    </section>
+{% endif %}
+
+
+{% if page.has_big_banner %}
+    <section class="width-100-pc">
+        <div class="pos-r min-h-400 d-flx flex-dir-col j-c-c">
+            <img src="{{ page.bg_image }}" class="absolute-zero bg-image" alt="">
+            <div class="absolute-zero bg-big-gradient"></div>
+            <div class="page-content py-3 wrapper-x d-flx flex-dir-col al-i-c">
+                <h1 class="co-white">{{ page.title }}</h1>
+                <p class="co-whitesmoke py-h">{{ page.description }}</p>
+                {% if page.has_video_link %}
+                    <button class="play-button video-button" data-video-link="{{ page.video_link }}">
+                        {% include tools/icons.html icon="play-button" %}
+                    </button>
+                {% endif %}
+            </div>
+        </div>
+    </section>
+{% endif %}
+
+
+<!-- {% if page.has_logos %}
+    <section class="maxwidth-sl mx-auto clearfix">
+        <div class="wrapper mx-auto grid-logos">
+            {% for item in page.logos %}
+                <div><img class="logo-contain" src="{{ item.image | prepend: site.url }}" title="{{ item.name }}" alt="{{ item.name }}"></div>
+            {% endfor %}
+        </div>
+    </section>
+{% endif %} -->
+
+
+{% if page.has_leftpic %}
+    <section class="width-100-pc mt-1">
+        <div class="maxwidth-sl mx-auto clearfix">
+            <div class="stacked-tile wrapper-y will-grow leftpic">
+                <div class="pos-r img-holder">
+                    <img src="{{ page.leftpic_image }}" class="cardshadow" alt="{{ item.title }}" class="stacked-tile-image obj-fit-cover is-raised">
+                </div>
+                <div class="stacked-tile-body card is-raised wrapper will-grow gradient-from-right p-left">
+                    <h2>{{ page.leftpic_title }}</h2>
+                    <p>{{ page.leftpic_body | markdownify }}</p>
+                </div>
+            </div>
+        </div>
+    </section>
+{% endif %}
+
+
+{% if page.small_right %}
+    <section class="maxwidth-lt mx-auto clearfix">
+        <div class="left-70 wrapper d-flx pt-2 flex-dir-col min-h-500 j-c-c">
+            <h1>{{ page.small_right_title }}</h1>
+            {% if page.small_right_description %}
+                <p>{{ page.small_right_description | markdownify }}</p>
+            {% endif %}
+            {% if page.small_right_link %}
+                <div>
+                    <a href="{{ page.small_right_link }}" class="d-ibl"><button class="eyowo-button-white bg-primary radius-50">Sign up/Sign in <span class="suffix">{% include tools/icons.html icon="chevron-right" %}</span></button></a>
+                </div>
+            {% endif %}
+        </div>
+        <div class="right-30 wrapper d-flx pt-2 flex-dir-col j-c-c">
+            <img src="{{ page.small_right_image }}" alt="{{ page.small_right_title }}">
+        </div>
+    </section>
+{% endif %}
+
+
+{% if page.small_left %}
+    <section class="maxwidth-lt mx-auto clearfix switch">
+        <div class="right-70 wrapper-x d-flx flex-dir-col min-h-500 j-c-c">
+            <h1>{{ page.small_left_title }}</h1>
+            {% if page.small_left_description %}
+                <p>{{ page.small_left_description | markdownify }}</p>
+            {% endif %}
+            {% if page.small_left_apps %}
+                <div class="grid-2 gg width-280">
+                    {% for item in page.small_left_apps %}
+                        <a href="{{ item.link }}" class="d-blk">
+                            <img src="{{ item.image | prepend: site.url }}" alt="">
+                        </a>
+                    {% endfor %}
+                </div>
+            {% endif %}
+        </div>
+        <div class="left-30 wrapper-x d-flx flex-dir-col j-c-c">
+            <img src="{{ page.small_left_image }}" alt="{{ page.small_left_title }}">
+        </div>
+    </section>
+{% endif %}
+
+
+{% if page.center_content %}
+    <section class="maxwidth-tb mx-auto clearfix">
+        <div class="wrapper d-flx flex-dir-col j-c-c al-i-c">
+            <h1>{{ page.center_content_title | markdownify }}</h1>
+            <div>
+                <a href="" class="d-ibl"><button class="eyowo-button-white bg-primary radius-50">Visit My Eyowo <span class="suffix">{% include tools/icons.html icon="chevron-right" %}</span></button></a>
+            </div>
+            <img class="py-2" src="{{ page.center_content_image }}" alt="{{ page.center_content_title }}">
+        </div>
+    </section>
+{% endif %}
+
+
+{% if page.list %}
+    <section class="maxwidth-tb mx-auto clearfix">
+        <div class="wrapper d-flx flex-dir-col j-c-c al-i-c">
+            <ul class="none">
+                {% for item in page.list %}
+                    <h2>{{ item.title }}</h2>
+                    <p>{{ item.body | markdownify }}</p>
+                {% endfor %}
+            </ul>
+        </div>
+    </section>
+{% endif %}
+
+
+{% if page.title == "Eyowo as a Business" %}
+    <section class="width-100-pc">
+        <div class="maxwidth-tb mx-auto wrapper">
+            <div class="p-2">
+                <ul class="carousel none" data-flickity='{ "autoPlay": 6000, "adaptiveHeight": true, "contain": true, "prevNextButtons": false, "pageDots": true, "wrapAround": true}'>
+                    {% for item in page.testimonial %}
+                        <li class="w-100 d-flx tx-c flex-dir-col al-i-c j-c-c">
+                            {% include tools/icons.html icon="quote" %}
+                            <p class="wrapper-y microtext"><i>{{ item.text }}</i></p>
+                            <img class="avatar radius-c mx-auto" src="{{ item.image }}" alt="">
+                            <p class="mb-0 mt-1"><strong>{{ item.name }}</strong></p>
+                            <p><i>{{ item.address }}</i></p>
+                        </li>
+                    {% endfor %}
+                </ul>
+            </div>
+        </div>
+    </section>
+{% endif %}
+
+
+{% if page.is_blog %}
+    <section class="width-100-pc py-2 bg-gray">
+        <div class="maxwidth-sl mx-auto wrapper">
+            <div class="grid is-multi-col mostly-3">
+                {% for post in paginator.posts %}
+                    {% include components/blog-post.html %}
+                {% endfor %}
+            </div>
+
+            <div class="pagination py-3 d-flx j-c-sb">
+                {% if paginator.previous_page %}
+                    <div><a href="{{ paginator.previous_page_path | prepend: site.url }}" class="previous"><div class="d-flx j-c-c al-i-c"> <span class="nanotext prefix">{% include tools/icons.html icon="arrow-left" %}</span> Previous</div></a></div>
+                {% endif %}
+                <div><span class="page_number prefix suffix is-wider">Page: {{ paginator.page }} of {{ paginator.total_pages }}</span></div>
+                {% if paginator.next_page %}
+                    <div><a href="{{ paginator.next_page_path | prepend: site.url }}" class="next"><div class="d-flx j-c-c al-i-c">Next <span class="nanotext suffix">{% include tools/icons.html icon="arrow-right" %}</span></div></a></div>
+                {% endif %}
+            </div>
+        </div>
+    </section>
+{% endif %}
+
+
+
+{% include lists/mobile-experience.html %}
+
+
+
+{% if page.has_video_link %}
+    <div id="myModal" class="video-modal">
+
+        <div class="video-content p-2">
+            <span class="video-close">&times;</span>
+            <div>
+                <iframe class="modal-iframe" width="100%" src="" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+            </div>
+        </div>
+        
+    </div>
+{% endif %}

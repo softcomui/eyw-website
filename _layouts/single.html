@@ -1,0 +1,32 @@
+---
+layout: default
+---
+
+<section class="width-100-pc mt-3 pt-2">
+    <div class="maxwidth-sl mx-auto wrapper">
+        <div class="d-flx flex-dir-col al-i-c">
+            <h1 class="tx-c">{{ page.title }}</h1>
+            <p class="smalltext co-primary py-h">{{ page.date | date: "%b %-d, %Y" }}</p>
+            <img class="min-h-300" src="{{ page.feature_image }}" alt="">
+        </div>
+    </div>
+</section>
+
+<section class="width-100-pc pb-2">
+    <div class="maxwidth-sl mx-auto wrapper">
+        {{ content }}
+    </div>
+</section>
+
+<section class="width-100-pc py-2 bg-gray">
+    <div class="maxwidth-sl mx-auto wrapper">
+        <div class="grid is-multi-col mostly-3">
+            {% assign blog_posts = site.posts %}
+            {% for post in blog_posts limit: 3 %}
+                {% include components/blog-post.html %}
+            {% endfor %}
+        </div>
+    </div>
+</section>
+
+{% include lists/mobile-experience.html %}

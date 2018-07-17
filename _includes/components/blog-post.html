@@ -1,0 +1,31 @@
+<div class="bottomshadow bg-white">
+    <img class="blog-feature-image" src="{{ post.feature_image | prepend: site.url }}" alt="">
+    <div class="p-1 d-flx al-i-c j-c-sb">
+        {% assign topic = site.topics | where: 'title', post.topic | first %}
+        {% if topic %}
+            <p class="mb-0"><a href="{{ topic.url }}">{{ topic.title }}</a></p>
+        {% endif %}
+        <p class="microtext">
+            {{ post.date | date: "%b %-d, %Y" }}
+        </p>
+    </div>
+    <div class="d-flx j-c-sb flex-dir-col">
+        <a class="co-richblack" href="{{ post.url | prepend: site.url }}">
+            <div class="p-1">
+                <h2 class="largetext co-richblack m-0 p-0">
+                    {{ post.title }}
+                </h2>
+                <p class="nanotext">{{ post.content | truncatewords: 15, '...' }}</p>
+            </div>
+        </a>
+        <div class="p-1 d-flx al-i-c">
+            {% assign author = site.authors | where: 'title', post.author | first %}
+            {% if author %}
+                <img class="small-avatar radius-c" src="{{ author.image }}" alt="">
+                <div class="suffix">
+                    <p class="mb-0"><a href="{{ author.url }}">{{ author.title }}</a></p>
+                </div>
+            {% endif %}
+        </div>
+    </div>
+</div>

@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48.594 42.2">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #dd8027;
+      }
+    </style>
+  </defs>
+  <g id="two-quotes" transform="translate(0)">
+    <g id="Group_3343" data-name="Group 3343" transform="translate(0 0)">
+      <path id="Path_1862" data-name="Path 1862" class="cls-1" d="M9.322,5A9.459,9.459,0,0,0,0,14.591a9.459,9.459,0,0,0,9.322,9.591c9.321,0,3.107,18.543-9.322,18.543V47.2C22.181,47.2,30.874,5,9.322,5ZM36.177,5a9.459,9.459,0,0,0-9.322,9.591,9.459,9.459,0,0,0,9.322,9.591c9.321,0,3.107,18.543-9.322,18.543V47.2C49.035,47.2,57.729,5,36.177,5Z" transform="translate(0 -5)"/>
+    </g>
+  </g>
+</svg>

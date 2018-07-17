@@ -1,0 +1,152 @@
+---
+layout: default
+---
+
+<section class="maxwidth-sl mx-auto clearfix">
+    <div class="left-70 wrapper min-height-100-vh d-flx pt-2 flex-dir-col j-c-c">
+        <h1 class="pt-2 mt-2">
+            {{page.main_title1}}
+            <br/>
+            <span class="co-primary">
+                {{page.main_title2}}
+            </span>
+        </h1>
+        <p class="m-0 mt-1 mb-2">{{page.main_paragraph | markdownify}}</p>
+        <div class="d-ibl"><a href="{{ site.url }}/experience" class="d-ibl"><button class="eyowo-button bg-primary radius-50"> {% include tools/icons.html icon="cowrie" %} EXPERIENCE EYOWO</button></a></div>
+    </div>
+    <div class="right-30 wrapper min-height-100-vh d-flx flex-dir-col j-c-c">
+        <figure class="eyowo-image p-0 pt-2 ">
+            <img src="{{ site.url }}/uploads/pages/ussd.svg" alt="">
+        </figure>
+    </div>
+</section>
+
+<!-- Eyowo in action -->
+<section class="width-100-pc mt-1">
+    <div class="maxwidth-sl mx-auto clearfix">
+        <div class="stacked-tile wrapper-y will-grow rightpic">
+            <div class="pos-r img-holder">
+                <button class="action-button video-button absolute-middle" data-video-link="https://www.youtube.com/embed/-9WFWI16yzU">
+                    {% include tools/icons.html icon="play-button" %}
+                </button>
+                <img src="{{ site.url }}/uploads/people/action.jpg" class="cardshadow" alt="{{ item.title }}" class="stacked-tile-image obj-fit-cover is-raised">
+            </div>
+            <div class="stacked-tile-body card is-raised wrapper will-grow gradient-from-left p-left">
+                <h2>{{page.action_title}}</h2>
+                <p>{{page.action_paragraph | markdownify }}</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- How it works -->
+<section class="maxwidth-tb mx-auto wrapper my-1">
+    <div class="tx-c">
+        <h2>{{page.how_it_works_title}}</h2>
+        <p>{{page.how_it_works_paragraph | markdownify }}</p>
+    </div>
+</section>
+
+<!-- for everyone -->
+<section class="width-100-pc mt-1">
+    <div class="maxwidth-sl mx-auto clearfix">
+        <div class="stacked-tile wrapper-y will-grow leftpic">
+            <div class="pos-r img-holder">
+                <button class="everyone-button video-button absolute-middle" data-video-link="https://www.youtube.com/embed/-9WFWI16yzU">
+                    {% include tools/icons.html icon="play-button" %}
+                </button>
+                <img src="{{ site.url }}/uploads/people/everyone.jpg" class="cardshadow" alt="{{ item.title }}" class="stacked-tile-image obj-fit-cover is-raised">
+            </div>
+            <div class="stacked-tile-body card is-raised wrapper will-grow gradient-from-right p-left">
+                <h2>{{page.for_everyone_title}}</h2>
+                <p>{{page.for_everyone_paragraph | markdownify }}</p>
+                <div>
+                    <a href="{{ site.url }}/experience" class="d-ibl"><button class="eyowo-button-white bg-primary radius-50">Visit My Eyowo <span class="suffix">{% include tools/icons.html icon="chevron-right" %}</span></button></a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- For business -->
+<section class="width-100-pc bg-home-business my-3 pos-r">
+    <img src="{{ site.url }}/uploads/pages/merchant.svg" class="absolute-zero bg-image" alt="">
+    <div class="maxwidth-sl mx-auto clearfix page-content">
+        <div class="left-30 wrapper d-flx pt-2 flex-dir-col j-c-c co-whitesmoke">
+            <h2 class="co-white">{{page.for_business_title}}</h2>
+            <p>{{page.for_business_paragraph | markdownify }}</p>
+            <p class="microtext">Download Eyowo for Business</p>
+            <div class="grid-2 gg width-280">
+                <a href="" class="d-blk">
+                    <img src="{{ site.url }}/uploads/icons/apple-white.svg" alt="">
+                </a>
+                <a href="" class="d-blk">
+                    <img src="{{ site.url }}/uploads/icons/google-white.svg" alt="">
+                </a>
+            </div>
+            <div class="width-280 my-2">
+                <div class="pos-r">
+                    <img src="{{ site.url }}/uploads/pages/for-business.jpg" alt="">
+                    <button class="business-button video-button absolute-middle" data-video-link="https://www.youtube.com/embed/-9WFWI16yzU">
+                        {% include tools/icons.html icon="play-button" %}
+                    </button>
+                </div>
+                <p class="microtext py-h">See how businesses are using Eyowo</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- for kiosk -->
+<section class="width-100-pc mt-1">
+    <div class="maxwidth-sl mx-auto">
+        <div class="stacked-tile wrapper-y will-grow rightpic">
+            <div class="pos-r img-holder">
+                <img class="cardshadow" src="{{ site.url }}/uploads/people/action.jpg" alt="{{ item.title }}" class="stacked-tile-image obj-fit-cover is-raised">
+            </div>
+            <div class="stacked-tile-body card is-raised wrapper will-grow gradient-from-left p-left">
+                <h2>{{page.for_kiosk_title}}</h2>
+                <p>{{ page.for_kiosk_paragraph | markdownify }}</p>
+                <div>
+                    <a href="{{ site.url }}/experience" class="d-ibl"><button class="eyowo-button-white bg-primary radius-50">Sign up/Sign in <span class="suffix">{% include tools/icons.html icon="chevron-right" %}</span></button></a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- carousel -->
+<section class="width-100-pc">
+    <div class="maxwidth-sl mx-auto wrapper">
+        <article class="tx-c">
+            <h2>{{page.why_we_do-it_title}}</h2>
+            <p>{{ page.why_we_do-it_paragraph | markdownify }}</p>
+        </article>
+        <div class="pt-2">
+            <ul class="carousel first-carousel none" data-flickity='{ "autoPlay": 6000, "adaptiveHeight": true, "contain": true, "prevNextButtons": false, "pageDots": true, "wrapAround": true}'>
+                {% for testimonial in page.testimonial_images %}
+                    <li class="carousel-cell">
+                        <div class="suffix prefix mx-auto">
+                            <img src="{{testimonial.testimonial_image}}" alt="">
+                        </div>
+                    </li>
+                {% endfor %}
+            </ul>
+        </div>
+    </div>
+</section>
+
+{% include lists/mobile-experience.html %}
+
+
+
+<div id="myModal" class="video-modal">
+
+    <div class="video-content p-2">
+        <span class="video-close">&times;</span>
+        <div>
+            <iframe class="modal-iframe" width="100%" src="" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+        </div>
+    </div>
+    
+</div>

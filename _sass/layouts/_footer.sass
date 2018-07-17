@@ -1,0 +1,47 @@
+// 
+    // Footer
+
+    // @package eyw
+    // @author  Kabolobari Benakole <i@kb.life>
+
+.site-footer
+    .columns
+        @extend .grid
+        .col
+            &:nth-child(1), &:nth-child(4), &:nth-child(5)
+                grid-column:    1 / 13
+            &:nth-child(2)
+                grid-column:    1 / 7
+            &:nth-child(3)
+                grid-column:    7 / 13
+            @media #{$smallup}
+                &:nth-child(1), &:nth-child(3)
+                    grid-column:    1 / 7
+                &:nth-child(2), &:nth-child(4)
+                    grid-column:    7 / 13
+            @media #{$mediumup}
+                &:nth-child(1)
+                    grid-column:    1 / 6
+                &:nth-child(2)
+                    grid-column:    6 / 8
+                &:nth-child(3)
+                    grid-column:    8 / 10
+                &:nth-child(4)
+                    grid-column:    10 / 13
+    li
+        a
+            display:                block
+            line-height:            0
+            padding:                $space 0
+
+.definition-area
+    a
+        width:                  32px
+        height:                 100%
+        display:                block
+        svg
+            width:              32px
+            transform:          translateY(6px)
+
+.colophon
+    opacity:                    0.5!important

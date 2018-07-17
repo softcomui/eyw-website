@@ -1,0 +1,68 @@
+// 
+    // Header
+
+    // @package eyw
+    // @author  Tonye Dickson <i@kb.life>
+
+
+header
+    z-index:                    200
+
+.mobile-nav
+    height:                             0
+    background:                         white
+    transition:                         height 0.00000000001s
+    z-index:                            21
+    ul
+        padding:                        15px
+        list-style:                     none
+        display:                        flex
+        flex-direction:                 column
+        height:                         100%
+        justify-content:                space-between
+        margin:                         0
+        align-items:                    flex-end
+        opacity:                        0
+        transition:                     opacity 0.5s
+        li
+            transform:                  translateY(-230px)
+            opacity:                    0
+            transition:                 opacity 0.5s
+
+.open-nav.mobile-nav
+    margin-top:                         65px
+    height:                             290px
+    ul
+        opacity:                        1
+        li
+            transform:                  translateY(0)
+            opacity:                    1
+
+.bg-dark
+    .nav-menu
+        .bar1, .bar2, .bar3
+            background-color:           rgba(255,255,255,0.7)
+.bg-light
+    .nav-menu
+        .bar1, .bar2, .bar3
+            background-color:           rgba(0,0,0,0.7)
+.nav-menu
+    cursor:                         pointer
+    z-index:                        20
+    .bar1, .bar2, .bar3
+        width:                      20px
+        height:                     2px
+        margin:                     4px 0
+        transition:                 0.4s
+.change .bar1
+    transform:                      rotate(-45deg) translate(-2px, 5px)
+.change .bar2
+    opacity:                        0
+.change .bar3
+    transform:                      rotate(45deg) translate(-3px, -7px)
+
+
+
+@media screen and (max-width: 850px)
+    nav
+        display: none

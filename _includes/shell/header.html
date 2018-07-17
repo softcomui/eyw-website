@@ -1,0 +1,75 @@
+<header class="site-header microtext pos-f fixed-to-top {% if page.background == 'light' %} bg-light{% elsif page.background == 'dark' %} bg-dark{% endif %}">
+    <div class="maxwidth-sl mx-auto wrapper-x py-1h">
+        <nav class="d-flx j-c-sb al-i-c">
+            {% if page.background == "light" %}
+                <div class="logo">
+                    <a href="{{ site.url }}">
+                        <img src="{{ site.url }}/uploads/brand/logo.svg" alt="">
+                    </a>
+                </div>
+            {% elsif page.background == "dark" %}
+                <div class="logo"><a href="{{ site.url }}"><img src="{{ site.url }}/uploads/brand/white-logo.svg" alt=""></a></div>
+            {% endif %}
+            {% if page.background == "light" %}
+            <ul class="none al-i-c topmenu">
+                {% for link in site.mainnav%}
+                {% assign class = "" %}
+                {% if link.link == page.url %} 
+                    {% assign class = class | append: " is-active" %}
+                {% endif %}
+                <li class="mr-2">
+                    <a href="{% if link.new_window %}{{ link.link }}{% else %}{{ site.url }}{{ link.link }}{% endif %}" class="{{ class }}" {% if link.new_window %}target="_blank" {% endif %}>
+                        {{ link.page }}
+                    </a>
+                </li>
+                {% endfor %}
+                <li>
+                    <a href="">
+                        <button class="microtext px-1 radius-50 eyowo-button">MY EYOWO</button>
+                    </a>
+                </li>
+            </ul>
+            {% elsif page.background == "dark" %}
+            <ul class="none al-i-c topmenu">
+                {% for link in site.mainnav%} {% assign class = "" %}
+                {% if link.link == page.url %}
+                    {% assign class = class | append: " is-active" %}
+                {% endif %}
+                <li class="mr-2">
+                    <a href="{% if link.new_window %}{{ link.link }}{% else %}{{ site.url }}{{ link.link }}{% endif %}" class="{{ class }}" {% if link.new_window %}target="_blank" {% endif %}>
+                        {{ link.page }}
+                    </a>
+                </li>
+                {% endfor %}
+                <li>
+                    <a href=""><button class="microtext px-1 radius-50 eyowo-button">MY EYOWO</button></a>
+                </li>
+            </ul>
+            {% endif %}
+            <div class="nav-menu" onclick="showmenu(this)">
+                <div class="bar1"></div>
+                <div class="bar2"></div>
+                <div class="bar3"></div>
+            </div>
+        </nav>
+    </div>
+</header>
+<div class="mobile-nav pos-f fixed-to-top by-w {% if page.background == 'light' %} bg-white{% elsif page.background == 'dark' %} bg-branddark{% endif %}">
+    <ul class="sub-ul none tx-c">
+        {% for link in site.mainnav%} {% assign class = "" %}
+        {% if link.link == page.url %}
+            {% assign class = class | append: " is-active" %} 
+        {% endif %}
+        <li class="">
+            <a href="{% if link.new_window %}{{ link.link }}{% else %}{{ site.url }}{{ link.link }}{% endif %}" class="{{ class }}" {% if link.new_window %}target="_blank" {% endif %}>
+                {{ link.page }}
+            </a>
+        </li>
+        {% endfor %}
+        <li>
+            <a href="">
+                <button class="smalltext px-2 radius-50 btn btn-brand">MY EYOWO</button>
+            </a>
+        </li>
+    </ul>
+</div>
