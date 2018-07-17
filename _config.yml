@@ -59,17 +59,7 @@ footer:
       - page: Press Kit
         link: /
       - page: Legal
-        link: /legal/
-
-
-# Headquarters
-headquarters:
-  title:      Lagos office
-  address:    5 Craig Street, <br /> Ogudu GRA, Lagos, <br /> Nigeria.
-  work_phone: +234 808 800 1000
-  cell_phone: +234 803 488 0518
-  email:      giantthoughts.com
-
+        link: /legal
 
 # Social media
 social_media:
