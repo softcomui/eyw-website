@@ -12,7 +12,7 @@ footer_text: Eyowo is a service of Softcom Ltd
 softcom_website: https://softcom.ng
 
 
-# Handling Reading
+# Handling Reading...
 charset: 'utf-8'
 pagination:
   enabled: true
