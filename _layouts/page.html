@@ -7,7 +7,9 @@ layout: default
         <div class="maxwidth-sl mx-auto wrapper">
             <div class="pos-r py-2 mt-2">
                 <img src="{{ page.bg_image }}" class="absolute-zero bg-image" alt="">
-                <div class="absolute-zero bg-gradient"></div>
+                {% if page.url != '/faqs/' %}
+                    <div class="absolute-zero bg-big-gradient"></div>
+                {% endif %}
                 <div class="page-content py-3 wrapper-x d-flx flex-dir-col al-i-c">
                     <h1 class="co-white">{{ page.title }}</h1>
                     <p class="co-whitesmoke nanotext py-h">{{ page.description }}</p>

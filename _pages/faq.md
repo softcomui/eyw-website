@@ -4,7 +4,7 @@ title: FAQs
 permalink: /faqs/
 background: light
 has_small_banner: true
-bg_image: /uploads/pages/faqs.jpg
+bg_image: /uploads/pages/faqs-head.jpg
 list:
 - title: What is Eyowo?
   body: |-
