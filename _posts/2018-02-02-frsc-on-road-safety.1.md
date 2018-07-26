@@ -1,7 +1,7 @@
 ---
 title: Eyowo partners with The Place
 date: 2018-02-02
-feature_image: /uploads/pages/blog-post-02.jpg
+feature_image: /uploads/pages/blogpost1.jpg
 topic: Finances
 author: Folake Agbaje
 username: folake

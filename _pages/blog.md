@@ -6,7 +6,7 @@ permalink: /blog/
 background: dark
 is_blog: true
 has_big_banner: true
-bg_image: http://res.cloudinary.com/psybug/image/upload/c_scale,w_1400/v1528454648/blog_iehyhx.jpg
+bg_image: /uploads/pages/conversation.jpg
 autopages: true
 pagination:
   enabled: true
