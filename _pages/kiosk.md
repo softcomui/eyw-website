@@ -18,16 +18,24 @@ small_right_description: |-
     Sync all purchases made at various business locations, reconcile all customer transactions and manage purchase insights.
 has_testimonial: true
 testimonial:
-- text: Personally, I'm amazed at the impact Eyowo Kiosk has made on my finances since I signed up, I've been able to grow my business with the stress-free and hitch-free approach Eyowo offers. Last month, I made more than &#8358;20,000 without leaving my comfort zone. Sweet!
-  name: Sussan Jennifer Sholanke
-  image: /uploads/people/avatar.jpg
-  address: Ikeja GRA, Lagos, Nigeria
-- text: I love the speed and ease of doing business that Eyowo gives me. I have been recommending it to my friends and it has helped us send and receive money without hassle.
-  name: Solomon Sholanke Benjamin
-  image: /uploads/people/avatar.jpg
+- text: Eyowo is a nice application that I use for all sorts of transactions. I would rather use the app than the USSD code. What I enjoy most about Eyowo is how simple it works. I use it to send money to my colleagues at work and my relatives.
+  name: Ejiro I
+  image: /uploads/pages/testimonial-1.jpg
+  address: Warri, Nigeria
+- text: Eyowo is a nice product that I enjoy because it is fast and easy to use. I use both *4255# and the Eyowo user app. When I need to pay my sales personnel, I just log on to the Eyowo Web app and the process is so seamless.
+  name: Phebian C
+  image: /uploads/pages/testimonial-2.jpg
   address: Lekki, Lagos, Nigeria
-- text: I'm am loving this Eyowo Experience. Nothing I've tried before ever came close to what Eyowo offers.
-  name: Ibiye Stephanie Briggs
-  image: /uploads/people/avatar.jpg
-  address: Ikorodu, Lagos, Nigeria
+- text: I prefers the Eyowo USSD code and I use it everywhere. My first experience was amazing and since then, I have been using it for transactions with family and friends.
+  name: Ayo L
+  image: /uploads/pages/testimonial-3.jpg
+  address: Ilorin, Lagos, Nigeria
+- text: Personally, I'm amazed at the impact Eyowo Kiosk has made on my finances since I signed up, I've been able to grow my business with this business opportunity Eyowo offers. Last month, I made more than 20,000 Naira without leaving my comfort zone. Sweet!
+  name: Abdul J
+  image: /uploads/pages/testimonial-4.jpg
+  address: Nsukka, Lagos, Nigeria
 ---
+
+, 
+“”
+

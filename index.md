@@ -39,8 +39,8 @@ why_we_do-it_title: Why we do what we do
 why_we_do-it_paragraph: |-
     This payment solution aims to cater for the financial demands of the unbanked while simplifying payment and billing procedures for the banked. Our ultimate aim is financial inclusion for millions of Nigerians who  have phone numbers but no bank accounts.
 testimonial_images:
-- testimonial_image: /uploads/tweets.svg
-- testimonial_image: /uploads/tweets.svg
-- testimonial_image: /uploads/tweets.svg
-- testimonial_image: /uploads/tweets.svg
+- testimonial_image: /uploads/pages/tweet-1.png
+- testimonial_image: /uploads/pages/tweet-2.png
+- testimonial_image: /uploads/pages/tweet-3.png
+- testimonial_image: /uploads/pages/tweet-6.png
 ---

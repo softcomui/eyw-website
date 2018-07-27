@@ -8,12 +8,12 @@ has_small_banner: true
 bg_image: /uploads/pages/experience.jpg
 has_form: true
 small_right: true
-small_right_image: /uploads/pages/ussd-code.svg
+small_right_image: /uploads/pages/new@3x.png
 small_right_title: "&#42;4255&#35;"
 small_right_description: |-
     Dial <span class="co-primary">&#42;4255&#42;100&#35;</span> on your mobile device and follow the prompts.
 small_left: true
-small_left_image: /uploads/pages/ussd-code.svg
+small_left_image: /uploads/pages/new@3x.png
 small_left_title: "Mobile Apps"
 small_left_description: |-
 small_left_apps:
