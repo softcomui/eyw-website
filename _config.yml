@@ -4,7 +4,7 @@ shortname: eyowo
 abbrev: eyw
 email: people@eyowo.com
 description: Eyowo is the simplest way to send or recieve money online or offline.
-definition: Fast, convenient, and secure payments and transfers for individuals and businesses.
+definition: Fast, convenient and secure payments for individuals and businesses.
 url: "http://eyw.softcom.ng"
 timezone: Africa/Lagos
 language: en
@@ -70,7 +70,7 @@ social_media:
       - name: Twitter
         link: eyowo
       - name: Instagram
-        link: eyowo
+        link: myeyowo
 
 
 # Build settings

@@ -18,7 +18,7 @@ small_right_description: |-
     Get paid via your own USSD code. Here’s an example: &#42;4255&#42;Unique-Code&#35;.
 has_leftpic: true
 leftpic_title: Easiest way to manage sales
-leftpic_image: /uploads/pages/manage-sales.jpg
+leftpic_image: /uploads/pages/manage_sales.jpg
 leftpic_body: |-
     Eyowo grants you access to affordable, convenient and secure financial transactions. It affords you the opportunity to make payments whenever, and however you want it.
 
