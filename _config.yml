@@ -56,10 +56,10 @@ footer:
         link: /blog/
       - page: Studio
         link: /studio/
-      - page: Press Kit
-        link: /
-      - page: Legal
-        link: /legal
+      # - page: Press Kit
+      #   link: /
+      # - page: Legal
+      #   link: /legal
 
 # Social media
 social_media:
