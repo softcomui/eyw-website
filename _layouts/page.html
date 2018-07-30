@@ -113,7 +113,10 @@ layout: default
             {% endif %}
         </div>
         <div class="left-30 wrapper-x d-flx flex-dir-col j-c-c">
-            <img src="{{ page.small_left_image }}" alt="{{ page.small_left_title }}">
+            <figure>
+                <video src="{{ page.small_left_video }}" width="350px" height="700px" object-fit="cover" type="video/mp4" alt="{{ page.small_left_title }}" controls>
+                </video>
+            </figure>
         </div>
     </section>
 {% endif %}
@@ -126,7 +129,8 @@ layout: default
             <div>
                 <a href="" class="d-ibl"><button class="eyowo-button-white bg-primary radius-50">Visit My Eyowo <span class="suffix">{% include tools/icons.html icon="chevron-right" %}</span></button></a>
             </div>
-            <img class="py-2" src="{{ page.center_content_image }}" alt="{{ page.center_content_title }}">
+            <video src="{{ page.center_content_video }}" type="video/mp4" alt="{{ page.center_content_title }}" controls>
+            </video>
         </div>
     </section>
 {% endif %}
@@ -207,3 +211,9 @@ layout: default
         
     </div>
 {% endif %}
+
+
+
+<video src="{{ page.small_left_video }}" width="350px" height="700px" object-fit="cover" type="video/mp4" alt="{{ page.small_left_title }}"
+    controls>
+</video>

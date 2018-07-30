@@ -43,4 +43,9 @@ testimonial_images:
 - testimonial_image: /uploads/pages/tweet-2.png
 - testimonial_image: /uploads/pages/tweet-3.png
 - testimonial_image: /uploads/pages/tweet-6.png
+- testimonial_image: /uploads/pages/tweet-7.png
+- testimonial_image: /uploads/pages/tweet-9.png
+- testimonial_image: /uploads/pages/tweet-12.png
+- testimonial_image: /uploads/pages/tweet-13.png
+- testimonial_image: /uploads/pages/tweet-14.png
 ---
