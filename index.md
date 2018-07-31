@@ -35,7 +35,7 @@ for_kiosk_paragraph: |-
     Kiosks provide cost services such as Eyowo Funding, Cash Out, Funds Transfer, Bills Payment and Airtime Recharge.
 
     As a Kiosk, you will earn commissions when you render these services to banked and unbanked users.
-why_we_do-it_title: Why we do what we do
+why_we_do-it_title: Why We Do What We Do
 why_we_do-it_paragraph: |-
     This payment solution aims to cater for the financial demands of the unbanked while simplifying payment and billing procedures for the banked. Our ultimate aim is financial inclusion for millions of Nigerians who  have phone numbers but no bank accounts.
 testimonial_images:
