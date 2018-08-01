@@ -1,5 +1,5 @@
 ---
-title: Enter Your Pin
+title: Enter Your PIN
 date: 2018-07-28
 feature_image: /uploads/pages/blogpost2.png
 topic: Business
@@ -54,5 +54,5 @@ It takes them 7 minutes to punch in their PIN, another 5 minutes to  check their
 These ones just ignore the queue and walk towards the ATM. Don’t bother questioning them because they are older and this is Africa. If you think you know your rights too much and you dare question them, you will hear something similar to this: “I’m old enough to be your father” or “Children of nowadays”.
  
 #### •••
-#### But do you know you can avoid these issues by simply dialing *4255#? You can also download Eyowo on App Store or Play Store.
+#### But do you know you can avoid these issues by simply dialing *4255#? You can also download Eyowo on <a href="https://itunes.apple.com/us/app/eyowo/id1353757720?mt=8" target="_blank">App Store</a> or <a href="https://play.google.com/store/apps/details?id=com.eyowo.android" target="_blank">Play Store</a>.
 

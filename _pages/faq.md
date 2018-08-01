@@ -8,16 +8,16 @@ bg_image: /uploads/pages/faqs-head.jpg
 list:
 - title: What is Eyowo?
   body: |-
-    Eyowo is a digital solution that helps you achieve simple day-to-day financial transactions. To use Eyowo, simply create an account [here](http://) and you’re on your way to making your first transaction in seconds. Technically, you already have an Eyowo account. Find out here!
+    Eyowo is a digital solution that helps you achieve simple day-to-day financial transactions. To use Eyowo, simply create an account <a href="https://app.eyowo.com/" target="_blank">here</a> and you’re on your way to making your first transaction in seconds. Technically, you already have an Eyowo account. Find out here!
 - title: How do I create an Eyowo account?
   body: |-
-    You can create a free account by following this [link](http://)
+    You can create a free account by following this <a href="https://app.eyowo.com/" target="_blank">link</a>
 - title: Is it secure?
   body: |-
     All transactions on Eyowo are secure. This helps us prevent unauthorized access to your account. Contact us immediately via [support@eyowo.com](mailto:support@eyowo.com) if you have noticed any unauthorized activity on your Eyowo account.
 - title: How can I recover my password?
   body: |-
-    If you are having issues signing into your account because you forgot your username or pin, you can retrieve your details by clicking on ’forgot password’ on the [login](http://) page.
+    If you are having issues signing into your account because you forgot your username or PIN, you can retrieve your details by clicking on "forgot password" on the <a href="https://app.eyowo.com/" target="_blank">login</a> page.
 - title: Where can I use Eyowo?
   body: |-
     A lot of digital and traditional stores are collecting payments with Eyowo. You can also use Eyowo to pay flight tickets, bills, hotel bookings etc. You can send funds to anyone in Nigeria with Eyowo. All you need is their phone number. Sending money has never been this seamless. 

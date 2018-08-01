@@ -23,7 +23,7 @@ From the above statistics, it is easy to deduce that a lot of Nigerians who have
 
 Ever imagined a world where everyone with a phone number irrespective of them being banked or unbanked can pay and receive money?
 
-Don't imagine for too long, that world exists already. Experience Eyowo here
+Don't imagine for too long, that world exists already. Experience Eyowo <a href="{{site.url}}/experience/" target="blank">HERE</a>
  
 
 

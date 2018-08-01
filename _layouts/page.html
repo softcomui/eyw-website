@@ -32,13 +32,16 @@ layout: default
     <section class="width-100-pc">
         <div class="pos-r min-h-400 d-flx flex-dir-col j-c-c">
             <img src="{{ page.bg_image }}" class="absolute-zero bg-image" alt="">
-            <div class="absolute-zero bg-big-gradient"></div>
+            <!-- <div class="absolute-zero bg-big-gradient"></div> -->
             <div class="page-content py-3 wrapper-x d-flx flex-dir-col al-i-c">
                 <h1 class="co-white">{{ page.title }}</h1>
                 <p class="co-whitesmoke py-h">{{ page.description }}</p>
                 {% if page.has_video_link %}
+                <!-- <video class="" src="/uploads/videos/eyowo-merchant-video.mp4" type="video/mp4">
+                </video> -->
+                
                     <button class="play-button video-button" data-video-link="{{ page.video_link }}">
-                        {% include tools/icons.html icon="play-button" %}
+                        <!-- {% include tools/icons.html icon="play-button" %} -->
                     </button>
                 {% endif %}
             </div>
@@ -89,7 +92,10 @@ layout: default
             {% endif %}
         </div>
         <div class="right-30 wrapper d-flx pt-2 flex-dir-col j-c-c">
-            <img src="{{ page.small_right_image }}" alt="{{ page.small_right_title }}">
+            <img src="/uploads/pages/newussd.png" alt="{{ item.title }}" >
+            <!-- <video src="{{ page.small_right_image }}" width="350px" height="700px" type="video/mp4" controls></video> 
+            <video muted="" playsinline="" class="" autoplay="" src="/uploads/videos/eyowo-mobile.gif"
+                style="visibility: visible;"></video> -->
         </div>
     </section>
 {% endif %}
@@ -113,10 +119,12 @@ layout: default
             {% endif %}
         </div>
         <div class="left-30 wrapper-x d-flx flex-dir-col j-c-c">
-            <figure>
-                <video src="{{ page.small_left_video }}" width="350px" height="700px" object-fit="cover" type="video/mp4" alt="{{ page.small_left_title }}" controls>
+            <img src="/uploads/pages/mobile_app.png" alt="{{ item.title }}">
+            <!-- <figure>
+                <video src="{{ page.small_left_video }}" width="350px" height="700px" type="video/mp4" controls>
                 </video>
-            </figure>
+                <video muted="" playsinline="" class="" autoplay="" src="https://www.apple.com/105/media/us/apple-pay/2017/1b3e5430_fafc_4e9d_8114_4ba5eacf00f4/overview/apple-pay/medium_2x.mp4" style="visibility: visible;"></video>  
+            </figure> -->
         </div>
     </section>
 {% endif %}
@@ -127,10 +135,15 @@ layout: default
         <div class="wrapper d-flx flex-dir-col j-c-c al-i-c">
             <h1>{{ page.center_content_title | markdownify }}</h1>
             <div>
-                <a href="" class="d-ibl"><button class="eyowo-button-white bg-primary radius-50">Visit My Eyowo <span class="suffix">{% include tools/icons.html icon="chevron-right" %}</span></button></a>
+                <a href="https://app.eyowo.com" class="d-ibl" target="blank"><button class="eyowo-button-white bg-primary radius-50">Visit My Eyowo <span class="suffix">{% include tools/icons.html icon="chevron-right" %}</span></button></a>
             </div>
-            <video src="{{ page.center_content_video }}" type="video/mp4" alt="{{ page.center_content_title }}" controls>
-            </video>
+            <img src="/uploads/pages/desktop.svg" alt="{{ item.title }}">
+            <!-- <figure>
+                <video src="{{ page.center_content_video }}" type="video/mp4" width="1000px" controls>
+                </video>
+                <video muted="" playsinline="" class="" autoplay="" src="uploads/videos/eyowo-merchant-video.mp4"
+                    style="visibility: visible;"></video>
+            </figure> -->
         </div>
     </section>
 {% endif %}
@@ -211,9 +224,3 @@ layout: default
         
     </div>
 {% endif %}
-
-
-
-<video src="{{ page.small_left_video }}" width="350px" height="700px" object-fit="cover" type="video/mp4" alt="{{ page.small_left_title }}"
-    controls>
-</video>

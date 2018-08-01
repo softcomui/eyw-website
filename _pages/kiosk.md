@@ -1,12 +1,12 @@
 ---
 layout: page
 title: Eyowo as a Business
-description: Benefit from being an Eyowo kiosk
+description: Benefits of being an Eyowo kiosk
 permalink: /kiosk/
 background: dark
 has_big_banner: true
 has_video_link: true
-video_link: "https://www.youtube.com/embed/bgsuOm_pse4"
+# video_link: "https://www.youtube.com/embed/bgsuOm_pse4"
 bg_image: http://res.cloudinary.com/psybug/image/upload/c_scale,w_1440/v1528454661/kiosk_o2bfns.jpg
 small_right: true
 small_right_image: /uploads/pages/ussd-code.svg

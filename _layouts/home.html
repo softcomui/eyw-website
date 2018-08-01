@@ -27,9 +27,9 @@ layout: default
         <div class="stacked-tile wrapper-y will-grow rightpic">
             <div class="pos-r img-holder">
                 <button class="action-button video-button absolute-middle" data-video-link="https://www.youtube.com/embed/-9WFWI16yzU">
-                    {% include tools/icons.html icon="play-button" %}
+                    <!-- {% include tools/icons.html icon="play-button" %} -->
                 </button>
-                <img src="{{ site.url }}/uploads/people/action.jpg" class="cardshadow" alt="{{ item.title }}" class="stacked-tile-image obj-fit-cover is-raised">
+                <img src="{{ site.url }}/uploads/people/eyowo-in-action.jpg" class="cardshadow" alt="{{ item.title }}" class="stacked-tile-image obj-fit-cover is-raised">
             </div>
             <div class="stacked-tile-body card is-raised wrapper will-grow gradient-from-left p-left">
                 <h2>{{page.action_title}}</h2>
@@ -53,9 +53,9 @@ layout: default
         <div class="stacked-tile wrapper-y will-grow leftpic">
             <div class="pos-r img-holder">
                 <button class="everyone-button video-button absolute-middle" data-video-link="https://www.youtube.com/embed/-9WFWI16yzU">
-                    {% include tools/icons.html icon="play-button" %}
+                    <!-- {% include tools/icons.html icon="play-button" %} -->
                 </button>
-                <img src="{{ site.url }}/uploads/people/everyone.jpg" class="cardshadow" alt="{{ item.title }}" class="stacked-tile-image obj-fit-cover is-raised">
+                <img src="{{ site.url }}/uploads/people/for-every-one.jpg" class="cardshadow" alt="{{ item.title }}" class="stacked-tile-image obj-fit-cover is-raised">
             </div>
             <div class="stacked-tile-body card is-raised wrapper will-grow gradient-from-right p-left">
                 <h2>{{page.for_everyone_title}}</h2>
@@ -75,23 +75,30 @@ layout: default
         <div class="left-30 wrapper d-flx pt-2 flex-dir-col j-c-c co-whitesmoke">
             <h2 class="co-white">{{page.for_business_title}}</h2>
             <p>{{page.for_business_paragraph | markdownify }}</p>
-            <p class="microtext">Download Eyowo for Business</p>
+            <p class="smalltext fw-bold">Download Eyowo for Business</p>
             <div class="grid-2 gg width-280">
-                <a href="" class="d-blk">
+            <a href="https://itunes.apple.com/ng/app/eyowo/id1353757720?mt=8" class="d-blk">
+                <img src="{{ site.url }}/uploads/icons/apple-white.svg" alt="">
+            </a>
+            <a href="https://play.google.com/store/apps/details?id=com.eyowo.till.android" class="d-blk">
+                <img src="{{ site.url }}/uploads/icons/google-white.svg" alt="">
+            </a>
+                <!--<a href="" class="d-blk">
                     <img src="{{ site.url }}/uploads/icons/apple-white.svg" alt="">
                 </a>
                 <a href="" class="d-blk">
                     <img src="{{ site.url }}/uploads/icons/google-white.svg" alt="">
                 </a>
-            </div>
+            </div> -->
             <div class="width-280 my-2">
-                <div class="pos-r">
-                    <img src="{{ site.url }}/uploads/pages/for-business.jpg" alt="">
-                    <button class="business-button video-button absolute-middle" data-video-link="https://www.youtube.com/embed/-9WFWI16yzU">
+                <div class="pos-r microtext py-h"> 
+                    <!-- add the "microtext py-h" class back to the <p class="">See how businesses are using Eyowo</p> below -->
+                    <!-- <img src="{{ site.url }}/uploads/pages/for-business.jpg" alt=""> -->
+                    <!-- <video class="business-button video-button absolute-middle" src="/uploads/videos/eyowo-merchant-video.mp4">
                         {% include tools/icons.html icon="play-button" %}
-                    </button>
-                </div>
-                <p class="microtext py-h">See how businesses are using Eyowo</p>
+                    </video>
+                </div> -->
+                <!-- <p class="">See how businesses are using Eyowo</p> -->
             </div>
         </div>
     </div>
@@ -102,7 +109,7 @@ layout: default
     <div class="maxwidth-sl mx-auto">
         <div class="stacked-tile wrapper-y will-grow rightpic">
             <div class="pos-r img-holder">
-                <img class="cardshadow" src="{{ site.url }}/uploads/people/action.jpg" alt="{{ item.title }}" class="stacked-tile-image obj-fit-cover is-raised">
+                <img class="cardshadow" src="{{ site.url }}/uploads/people/for-kiosk.jpg" alt="{{ item.title }}" class="stacked-tile-image obj-fit-cover is-raised">
             </div>
             <div class="stacked-tile-body card is-raised wrapper will-grow gradient-from-left p-left">
                 <h2>{{page.for_kiosk_title}}</h2>

@@ -1,13 +1,13 @@
 ---
 layout: page
 title: Eyowo and your Business
-description: See how we make it happen
+description: See how Eyowo is helping Businesses
 permalink: /business/
 background: dark
 has_big_banner: true
 has_video_link: true
-video_link: "https://www.youtube.com/embed/bgsuOm_pse4"
-bg_image: http://res.cloudinary.com/psybug/image/upload/c_scale,w_1464/v1528369453/for-business_uxx8ur.jpg
+video_link: "/uploads/videos/eyowo-merchant-video.mp4"
+bg_image: /uploads/pages/for-business-1.jpg
 small_right: true
 small_right_image: /uploads/pages/ussd-code.svg
 small_right_title: "For Business"
