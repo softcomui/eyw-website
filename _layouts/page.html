@@ -3,8 +3,8 @@ layout: default
 ---
 
 {% if page.has_small_banner %}
-    <section class="width-100-pc mt-3 pt-2">
-        <div class="maxwidth-sl mx-auto wrapper">
+    <section class="width-100-pc">
+        <div class=" mx-auto wrapper">
             <div class="pos-r py-2 mt-2">
                 <img src="{{ page.bg_image }}" class="absolute-zero bg-image" alt="">
                 {% if page.url != '/faqs/' %}
@@ -37,12 +37,13 @@ layout: default
                 <h1 class="co-white">{{ page.title }}</h1>
                 <p class="co-whitesmoke py-h">{{ page.description }}</p>
                 {% if page.has_video_link %}
-                <!-- <video class="" src="/uploads/videos/eyowo-merchant-video.mp4" type="video/mp4">
+                <!-- <video class="play-button video-button" src="{{ page.video_link }}" type="video/mp4">
+                        {% include tools/icons.html icon="play-button" %}
                 </video> -->
                 
-                    <button class="play-button video-button" data-video-link="{{ page.video_link }}">
-                        <!-- {% include tools/icons.html icon="play-button" %} -->
-                    </button>
+                    <!-- <button class="play-button video-button" data-video-link="{{ page.video_link }}">
+                        {% include tools/icons.html icon="play-button" %}
+                    </button> -->
                 {% endif %}
             </div>
         </div>
@@ -70,7 +71,7 @@ layout: default
                 </div>
                 <div class="stacked-tile-body card is-raised wrapper will-grow gradient-from-right p-left">
                     <h2>{{ page.leftpic_title }}</h2>
-                    <p>{{ page.leftpic_body | markdownify }}</p>
+                    {{ page.leftpic_body | markdownify }}
                 </div>
             </div>
         </div>
@@ -80,10 +81,10 @@ layout: default
 
 {% if page.small_right %}
     <section class="maxwidth-lt mx-auto clearfix">
-        <div class="left-70 wrapper d-flx pt-2 flex-dir-col min-h-500 j-c-c">
+        <div class="left-70 wrapper d-flx pt-2 flex-dir-col ">
             <h1>{{ page.small_right_title }}</h1>
             {% if page.small_right_description %}
-                <p>{{ page.small_right_description | markdownify }}</p>
+                {{ page.small_right_description | markdownify }}
             {% endif %}
             {% if page.small_right_link %}
                 <div>
@@ -92,7 +93,7 @@ layout: default
             {% endif %}
         </div>
         <div class="right-30 wrapper d-flx pt-2 flex-dir-col j-c-c">
-            <img src="/uploads/pages/newussd.png" alt="{{ item.title }}" >
+            <img src="/uploads/pages/newussd-x.png" alt="{{ item.title }}" >
             <!-- <video src="{{ page.small_right_image }}" width="350px" height="700px" type="video/mp4" controls></video> 
             <video muted="" playsinline="" class="" autoplay="" src="/uploads/videos/eyowo-mobile.gif"
                 style="visibility: visible;"></video> -->
@@ -106,7 +107,7 @@ layout: default
         <div class="right-70 wrapper-x d-flx flex-dir-col min-h-500 j-c-c">
             <h1>{{ page.small_left_title }}</h1>
             {% if page.small_left_description %}
-                <p>{{ page.small_left_description | markdownify }}</p>
+                {{ page.small_left_description | markdownify }}
             {% endif %}
             {% if page.small_left_apps %}
                 <div class="grid-2 gg width-280">
@@ -119,7 +120,7 @@ layout: default
             {% endif %}
         </div>
         <div class="left-30 wrapper-x d-flx flex-dir-col j-c-c">
-            <img src="/uploads/pages/mobile_app.png" alt="{{ item.title }}">
+            <img src="/uploads/pages/mobile_app-x.png" alt="{{ item.title }}">
             <!-- <figure>
                 <video src="{{ page.small_left_video }}" width="350px" height="700px" type="video/mp4" controls>
                 </video>
@@ -155,7 +156,7 @@ layout: default
             <ul class="none">
                 {% for item in page.list %}
                     <h2>{{ item.title }}</h2>
-                    <p>{{ item.body | markdownify }}</p>
+                    {{ item.body | markdownify }}
                 {% endfor %}
             </ul>
         </div>
@@ -192,14 +193,33 @@ layout: default
                     {% include components/blog-post.html %}
                 {% endfor %}
             </div>
-
             <div class="pagination py-3 d-flx j-c-sb">
                 {% if paginator.previous_page %}
-                    <div><a href="{{ paginator.previous_page_path | prepend: site.url }}" class="previous"><div class="d-flx j-c-c al-i-c"> <span class="nanotext prefix">{% include tools/icons.html icon="arrow-left" %}</span> Previous</div></a></div>
+                    <div>
+                        <a href="{{ paginator.previous_page_path | prepend: site.url }}" class="previous">
+                            <div class="d-flx j-c-c al-i-c"> 
+                                <span class="nanotext prefix">
+                                    {% include tools/icons.html icon="arrow-left" %}
+                                </span> Previous
+                            </div>
+                        </a>
+                    </div>
                 {% endif %}
-                <div><span class="page_number prefix suffix is-wider">Page: {{ paginator.page }} of {{ paginator.total_pages }}</span></div>
+                <div>
+                    <span class="page_number prefix suffix is-wider">
+                        Page: {{ paginator.page }} of {{ paginator.total_pages }}
+                    </span>
+                </div>
                 {% if paginator.next_page %}
-                    <div><a href="{{ paginator.next_page_path | prepend: site.url }}" class="next"><div class="d-flx j-c-c al-i-c">Next <span class="nanotext suffix">{% include tools/icons.html icon="arrow-right" %}</span></div></a></div>
+                    <div>
+                        <a href="{{ paginator.next_page_path | prepend: site.url }}" class="next">
+                            <div class="d-flx j-c-c al-i-c">
+                                Next <span class="nanotext suffix">
+                                    {% include tools/icons.html icon="arrow-right" %}
+                                </span>
+                            </div>
+                        </a>
+                    </div>
                 {% endif %}
             </div>
         </div>

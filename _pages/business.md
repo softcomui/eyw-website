@@ -7,7 +7,7 @@ background: dark
 has_big_banner: true
 has_video_link: true
 video_link: "/uploads/videos/eyowo-merchant-video.mp4"
-bg_image: /uploads/pages/for-business-1.jpg
+bg_image: /uploads/pages/for-business-1-x.jpg
 small_right: true
 small_right_image: /uploads/pages/ussd-code.svg
 small_right_title: "For Business"
@@ -18,7 +18,7 @@ small_right_description: |-
     Get paid via your own USSD code. Here’s an example: &#42;4255&#42;Unique-Code&#35;.
 has_leftpic: true
 leftpic_title: Easiest way to manage sales
-leftpic_image: /uploads/pages/manage_sales.jpg
+leftpic_image: /uploads/pages/manage_sales-x.jpg
 leftpic_body: |-
     Eyowo grants you access to affordable, convenient and secure financial transactions. It affords you the opportunity to make payments whenever, and however you want it.
 

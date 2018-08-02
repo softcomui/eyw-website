@@ -7,7 +7,7 @@ background: dark
 has_big_banner: true
 has_video_link: true
 # video_link: "https://www.youtube.com/embed/bgsuOm_pse4"
-bg_image: http://res.cloudinary.com/psybug/image/upload/c_scale,w_1440/v1528454661/kiosk_o2bfns.jpg
+bg_image: /uploads/pages/kiosk-x.jpg
 small_right: true
 small_right_image: /uploads/pages/ussd-code.svg
 small_right_title: "For Kiosk"

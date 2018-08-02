@@ -1,5 +1,5 @@
 <head>
-    <title>{{ page.title }} / {{ site.title }}</title>
+    <title>{{ page.title }} - {{ site.title }}</title>
     <meta charset="{{ site.charset }}">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="apple-touch-icon" sizes="180x180" href="{{ site.url }}/uploads/favicons/apple-touch-icon.png">
@@ -10,19 +10,12 @@
     <meta name="msapplication-TileColor" content="#ffffff">
     <meta name="theme-color" content="#ffffff">
 
-
-
     <link href="{{ site.url }}/css/flickity.min.css" rel="stylesheet" />
     <link rel="stylesheet" href="{{ site.url }}/css/photoswipe.css"> 
 
-
-
     <link rel="canonical" href="{{ page.url | absolute_url }}" />
+    <link rel="stylesheet" href="https://use.typekit.net/{{ site.typekit_id }}.css">
     <link href="{{ site.url }}/css/style.css" rel="stylesheet" />
-
-
-
-
     {% seo %}
     {% feed_meta %}
 </head>

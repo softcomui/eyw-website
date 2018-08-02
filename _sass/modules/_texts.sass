@@ -38,8 +38,8 @@
     +text-treatment( $microfont, uppercase, 2px )
 .nano-caps
     +text-treatment( $nanofont, uppercase, 2px )
-
-
+.small-nano-caps
+    +text-treatment( $smallnanofont, uppercase, 2px )
 
 
 // Sizes
@@ -78,3 +78,8 @@ h3, .h3
         font-size:      1.32rem
 h4, .h4
     font-size:          1.24rem
+
+.what-we-do
+    @media #{ $smallup }
+        text-align: center
+        margin: auto

@@ -11,8 +11,14 @@ layout: default
                 {{page.main_title2}}
             </span>
         </h1>
-        <p class="m-0 mt-1 mb-2">{{page.main_paragraph | markdownify}}</p>
-        <div class="d-ibl"><a href="{{ site.url }}/experience" class="d-ibl"><button class="eyowo-button bg-primary radius-50"> {% include tools/icons.html icon="cowrie" %} EXPERIENCE EYOWO</button></a></div>
+        {{ page.main_paragraph | markdownify }}
+        <div class="d-ibl mt-1">
+            <a href="{{ site.url }}/experience" class="d-ibl">
+                <button class="eyowo-button bg-primary radius-50">
+                    {% include tools/icons.html icon="cowrie" %} EXPERIENCE EYOWO
+                </button>
+            </a>
+        </div>
     </div>
     <div class="right-30 wrapper min-height-100-vh d-flx flex-dir-col j-c-c">
         <figure class="eyowo-image p-0 pt-2 ">
@@ -29,11 +35,11 @@ layout: default
                 <button class="action-button video-button absolute-middle" data-video-link="https://www.youtube.com/embed/-9WFWI16yzU">
                     <!-- {% include tools/icons.html icon="play-button" %} -->
                 </button>
-                <img src="{{ site.url }}/uploads/people/eyowo-in-action.jpg" class="cardshadow" alt="{{ item.title }}" class="stacked-tile-image obj-fit-cover is-raised">
+                <img src="{{ site.url }}/uploads/people/eyowo-in-action-x.jpg" class="cardshadow" alt="{{ item.title }}" class="stacked-tile-image obj-fit-cover is-raised">
             </div>
             <div class="stacked-tile-body card is-raised wrapper will-grow gradient-from-left p-left">
-                <h2>{{page.action_title}}</h2>
-                <p>{{page.action_paragraph | markdownify }}</p>
+                <h2 class="mt-0">{{page.action_title}}</h2>
+                {{page.action_paragraph | markdownify }}
             </div>
         </div>
     </div>
@@ -43,7 +49,7 @@ layout: default
 <section class="maxwidth-tb mx-auto wrapper my-1">
     <div class="tx-c">
         <h2>{{page.how_it_works_title}}</h2>
-        <p>{{page.how_it_works_paragraph | markdownify }}</p>
+        {{page.how_it_works_paragraph | markdownify }}
     </div>
 </section>
 
@@ -55,11 +61,11 @@ layout: default
                 <button class="everyone-button video-button absolute-middle" data-video-link="https://www.youtube.com/embed/-9WFWI16yzU">
                     <!-- {% include tools/icons.html icon="play-button" %} -->
                 </button>
-                <img src="{{ site.url }}/uploads/people/for-every-one.jpg" class="cardshadow" alt="{{ item.title }}" class="stacked-tile-image obj-fit-cover is-raised">
+                <img src="{{ site.url }}/uploads/people/for-every-one-x.jpg" class="cardshadow" alt="{{ item.title }}" class="stacked-tile-image obj-fit-cover is-raised">
             </div>
             <div class="stacked-tile-body card is-raised wrapper will-grow gradient-from-right p-left">
                 <h2>{{page.for_everyone_title}}</h2>
-                <p>{{page.for_everyone_paragraph | markdownify }}</p>
+                {{page.for_everyone_paragraph | markdownify }}
                 <div>
                     <a href="{{ site.url }}/experience" class="d-ibl"><button class="eyowo-button-white bg-primary radius-50">Visit My Eyowo <span class="suffix">{% include tools/icons.html icon="chevron-right" %}</span></button></a>
                 </div>
@@ -70,11 +76,11 @@ layout: default
 
 <!-- For business -->
 <section class="width-100-pc bg-home-business my-3 pos-r">
-    <img src="{{ site.url }}/uploads/pages/business-screen.jpg" class="absolute-zero bg-image" alt="">
+    <img src="{{ site.url }}/uploads/pages/business-screen-x.jpg" class="absolute-zero bg-image" alt="">
     <div class="maxwidth-sl mx-auto clearfix page-content">
         <div class="left-30 wrapper d-flx pt-2 flex-dir-col j-c-c co-whitesmoke">
             <h2 class="co-white">{{page.for_business_title}}</h2>
-            <p>{{page.for_business_paragraph | markdownify }}</p>
+            {{page.for_business_paragraph | markdownify }}
             <p class="smalltext fw-bold">Download Eyowo for Business</p>
             <div class="grid-2 gg width-280">
             <a href="https://itunes.apple.com/ng/app/eyowo/id1353757720?mt=8" class="d-blk">
@@ -109,11 +115,11 @@ layout: default
     <div class="maxwidth-sl mx-auto">
         <div class="stacked-tile wrapper-y will-grow rightpic">
             <div class="pos-r img-holder">
-                <img class="cardshadow" src="{{ site.url }}/uploads/people/for-kiosk.jpg" alt="{{ item.title }}" class="stacked-tile-image obj-fit-cover is-raised">
+                <img class="cardshadow" src="{{ site.url }}/uploads/people/for-kiosk-x.jpg" alt="{{ item.title }}" class="stacked-tile-image obj-fit-cover is-raised">
             </div>
             <div class="stacked-tile-body card is-raised wrapper will-grow gradient-from-left p-left">
                 <h2>{{page.for_kiosk_title}}</h2>
-                <p>{{ page.for_kiosk_paragraph | markdownify }}</p>
+                {{ page.for_kiosk_paragraph | markdownify }}
                 <div>
                     <a href="{{ site.url }}/experience" class="d-ibl"><button class="eyowo-button-white bg-primary radius-50">Sign up/Sign in <span class="suffix">{% include tools/icons.html icon="chevron-right" %}</span></button></a>
                 </div>
@@ -122,13 +128,14 @@ layout: default
     </div>
 </section>
 
-<!-- carousel -->
-<section class="width-100-pc">
-    <div class="maxwidth-sl mx-auto wrapper">
-        <article class="tx-c">
+<!-- Why we do what we do -->
+<section class="what-we-do width-100-pc">
+    <div class="maxwidth-tb mx-auto wrapper">
+        <article class="tx-l">
             <h2>{{page.why_we_do-it_title}}</h2>
-            <p>{{ page.why_we_do-it_paragraph | markdownify }}</p>
+            {{ page.why_we_do-it_paragraph | markdownify }}
         </article>
+    <!-- carousel -->
         <div class="pt-2">
             <ul class="carousel first-carousel none" data-flickity='{ "autoPlay": 6000, "adaptiveHeight": true, "contain": true, "prevNextButtons": false, "pageDots": true, "wrapAround": true}'>
                 {% for testimonial in page.testimonial_images %}

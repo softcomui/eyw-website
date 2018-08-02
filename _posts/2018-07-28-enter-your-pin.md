@@ -1,7 +1,7 @@
 ---
 title: Enter Your PIN
 date: 2018-07-28
-feature_image: /uploads/pages/blogpost2.png
+feature_image: /uploads/pages/blogpost2-x.png
 topic: Business
 author: Augustine Ogwo
 username: augustine

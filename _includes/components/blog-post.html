@@ -5,16 +5,16 @@
             <div class="d-flx al-i-c j-c-sb ff-sans-serif">
                 {% assign topic = site.topics | where: 'title', post.topic | first %}
                 {% if topic %}
-                    <p class="mb-0 nano-caps">
+                    <p class="mb-0 small-nano-caps">
                         {{ topic.title }}
                     </p>
                 {% endif %}
-                <p class="microtext">
+                <p class="nanotext">
                     {{ post.date | date: "%b %-d, %Y" }}
                 </p>
             </div>
-            <div class="co-richblack microtext mb-1hh">
-                <h2 class="largetext py-h  m-0 p-0 blog-featurelh">
+            <div class="co-richblack nanotext mb-1hh">
+                <h2 class="mediumtext py-h  m-0 blog-featurelh">
                     {{ post.title }}
                 </h2>
                 <div class="co-sweetgray blog-featurelh">
@@ -22,7 +22,7 @@
                 </div>
             </div>
         </div>
-        <div class="d-flx al-i-c pt-h nano-caps ff-sans-serif">
+        <div class="d-flx al-i-c pt-h small-nano-caps ff-sans-serif">
             {% assign author = site.authors | where: 'title', post.author | first %} {% if author %}
             <img class="small-avatar gray-filtered-link radius-50 prefix" src="{{ author.image }}" alt="">
             <div class="suffix">

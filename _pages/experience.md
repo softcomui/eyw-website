@@ -5,7 +5,7 @@ description: Get the first cash credit sent directly to your phone number.
 permalink: /experience/
 background: light
 has_small_banner: true
-bg_image: /uploads/pages/experience.jpg
+bg_image: /uploads/pages/experience-x.jpg
 has_form: true
 small_right: true
 small_right_video: /uploads/videos/phone-transfer-eyowo.mp4

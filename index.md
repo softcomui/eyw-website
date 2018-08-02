@@ -7,8 +7,7 @@ main_title1:
 main_title2:
     However, Whenever.
 main_paragraph: |-
-    Send, receive, spend money and pay bills with just your phone number.
-
+    Send, receive, spend money and pay bills with just your phone number. <br/>
     Carry-out transactions with or without a bank account, whether online or offline.
 action_title: Eyowo in Action
 action_paragraph: |-
@@ -37,7 +36,9 @@ for_kiosk_paragraph: |-
     As a Kiosk, you will earn commissions when you render these services to banked and unbanked users.
 why_we_do-it_title: Why We Do What We Do
 why_we_do-it_paragraph: |-
-    This payment solution aims to cater for the financial demands of the unbanked while simplifying payment and billing procedures for the banked. Our ultimate aim is financial inclusion for millions of Nigerians who  have phone numbers but no bank accounts.
+    This payment solution aims to cater for the financial demands of the unbanked while simplifying payment and billing procedures for the banked. 
+    
+    Our ultimate aim is financial inclusion for millions of Nigerians who  have phone numbers but no bank accounts.
 testimonial_images:
 - testimonial_image: /uploads/pages/tweet-1.png
 - testimonial_image: /uploads/pages/tweet-2.png

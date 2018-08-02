@@ -1,7 +1,7 @@
 ---
 title: The Big Parcel
 date: 2018-07-27
-feature_image: /uploads/pages/blogpost1.jpg
+feature_image: /uploads/pages/blogpost1-x.jpg
 topic: Finances
 author: Augustine Ogwo
 username: augustine

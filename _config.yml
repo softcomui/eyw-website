@@ -11,7 +11,7 @@ timezone: Africa/Lagos
 language: en
 footer_text: Eyowo is a service of Softcom Ltd
 softcom_website: https://softcom.ng
-
+typekit_id: dlv0cvs
 
 # Handling Reading...
 charset: 'utf-8'
@@ -55,8 +55,8 @@ footer:
     pages:
       - page: Conversations
         link: /blog/
-      - page: Studio
-        link: /studio/
+      # - page: Studio
+      #   link: /studio/
       # - page: Press Kit
       #   link: /
       # - page: Legal

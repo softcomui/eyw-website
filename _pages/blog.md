@@ -6,7 +6,7 @@ permalink: /blog/
 background: dark
 is_blog: true
 has_big_banner: true
-bg_image: /uploads/pages/conversation.jpg
+bg_image: /uploads/pages/conversation-x.jpg
 autopages: true
 pagination:
   enabled: true
