@@ -4,7 +4,7 @@ feature_image: http://res.cloudinary.com/psybug/image/upload/c_scale,w_1464/v152
 summary: Photos taken at the Eyowo launch in Lagos, Nigeria.
 date: 2018-03-23
 layout: gallery
-permalink: /launch-2/
+permalink: /launch-2
 ---
 
 ![alt text](http://res.cloudinary.com/psybug/image/upload/c_scale,w_1400/v1528454646/blog-post-01_yp1zo1.jpg)

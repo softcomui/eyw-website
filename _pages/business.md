@@ -7,7 +7,7 @@ background: dark
 has_big_banner: true
 has_video_link: true
 video_link: "/uploads/videos/eyowo-merchant-video.mp4"
-bg_image: /uploads/pages/for-business-1-x.jpg
+bg_image: /uploads/pages/for-business-1-c.jpg
 small_right: true
 small_right_image: /uploads/pages/ussd-code.svg
 small_right_title: "For Business"

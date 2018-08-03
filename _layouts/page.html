@@ -120,7 +120,7 @@ layout: default
             {% endif %}
         </div>
         <div class="left-30 wrapper-x d-flx flex-dir-col j-c-c">
-            <img src="/uploads/pages/mobile_app-x.png" alt="{{ item.title }}">
+            <img src="{{ page.small_left_video }}" alt="{{ item.title }}">
             <!-- <figure>
                 <video src="{{ page.small_left_video }}" width="350px" height="700px" type="video/mp4" controls>
                 </video>
@@ -139,6 +139,7 @@ layout: default
                 <a href="https://app.eyowo.com" class="d-ibl" target="blank"><button class="eyowo-button-white bg-primary radius-50">Visit My Eyowo <span class="suffix">{% include tools/icons.html icon="chevron-right" %}</span></button></a>
             </div>
             <img src="/uploads/pages/desktop.svg" alt="{{ item.title }}">
+            <!-- <video type="video/mp4" src="{{ page.center_content_video | prepend: site.url }}" muted loop></video> -->
             <!-- <figure>
                 <video src="{{ page.center_content_video }}" type="video/mp4" width="1000px" controls>
                 </video>

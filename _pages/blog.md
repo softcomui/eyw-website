@@ -14,5 +14,5 @@ pagination:
   per_page: 9
   sort_reverse: true
   sort_field: 'date'
-  paginate_path: '/blog/:num/'
+  paginate_path: '/blog/:num'
 ---

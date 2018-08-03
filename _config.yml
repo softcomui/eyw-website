@@ -60,7 +60,7 @@ footer:
       # - page: Press Kit
       #   link: /
       # - page: Legal
-      #   link: /legal
+      #   link: /legal/
 
 # Social media
 social_media:
@@ -103,7 +103,7 @@ defaults:
   - scope:
       type: conversations
     values:
-      permalink: /blog/:title/
+      permalink: /blog/:title/'
       layout: single
       background: light
       is_blog: true
