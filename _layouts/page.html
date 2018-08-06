@@ -4,20 +4,26 @@ layout: default
 
 {% if page.has_small_banner %}
     <section class="width-100-pc">
-        <div class=" mx-auto wrapper">
+        <div class="mx-auto wrapper">
             <div class="pos-r py-2 mt-2">
                 <img src="{{ page.bg_image }}" class="absolute-zero bg-image" alt="">
                 {% if page.url != '/faqs/' %}
                     <div class="absolute-zero bg-big-gradient"></div>
                 {% endif %}
                 <div class="page-content py-3 wrapper-x d-flx flex-dir-col al-i-c">
-                    <h1 class="co-white">{{ page.title }}</h1>
-                    <p class="co-whitesmoke nanotext py-h">{{ page.description }}</p>
+                    <h1 class="co-white">
+                        {{ page.title }}
+                    </h1>
+                    <p class="co-whitesmoke nanotext py-h">
+                        {{ page.description }}
+                    </p>
                     {% if page.has_form %}
                         <form action="">
                             <label class="d-flx radius-50">
                                 <input type="text" placeholder="Enter Phone Number" autofocus>
-                                <button class="eyowo-button radius-50 microtext">GET PAID</button>
+                                <button class="eyowo-button radius-50 microtext">
+                                    GET PAID
+                                </button>
                             </label>
                         </form>
                     {% endif %}
@@ -34,8 +40,12 @@ layout: default
             <img src="{{ page.bg_image }}" class="absolute-zero bg-image" alt="">
             <!-- <div class="absolute-zero bg-big-gradient"></div> -->
             <div class="page-content py-3 wrapper-x d-flx flex-dir-col al-i-c">
-                <h1 class="co-white">{{ page.title }}</h1>
-                <p class="co-whitesmoke py-h">{{ page.description }}</p>
+                <h1 class="co-white">
+                    {{ page.title }}
+                </h1>
+                <p class="co-whitesmoke py-h">
+                    {{ page.description }}
+                </p>
                 {% if page.has_video_link %}
                 <!-- <video class="play-button video-button" src="{{ page.video_link }}" type="video/mp4">
                         {% include tools/icons.html icon="play-button" %}
@@ -55,7 +65,9 @@ layout: default
     <section class="maxwidth-sl mx-auto clearfix">
         <div class="wrapper mx-auto grid-logos">
             {% for item in page.logos %}
-                <div><img class="logo-contain" src="{{ item.image | prepend: site.url }}" title="{{ item.name }}" alt="{{ item.name }}"></div>
+                <div>
+                    <img class="logo-contain" src="{{ item.image | prepend: site.url }}" title="{{ item.name }}" alt="{{ item.name }}">
+                </div>
             {% endfor %}
         </div>
     </section>
@@ -70,7 +82,9 @@ layout: default
                     <img src="{{ page.leftpic_image }}" class="cardshadow" alt="{{ item.title }}" class="stacked-tile-image obj-fit-cover is-raised">
                 </div>
                 <div class="stacked-tile-body card is-raised wrapper will-grow gradient-from-right p-left">
-                    <h2>{{ page.leftpic_title }}</h2>
+                    <h2 class="mt-0" >
+                        {{ page.leftpic_title }}
+                    </h2>
                     {{ page.leftpic_body | markdownify }}
                 </div>
             </div>
@@ -78,17 +92,23 @@ layout: default
     </section>
 {% endif %}
 
-
 {% if page.small_right %}
     <section class="maxwidth-lt mx-auto clearfix">
         <div class="left-70 wrapper d-flx pt-2 flex-dir-col ">
-            <h1>{{ page.small_right_title }}</h1>
+            <h1 class="mt-0 pt-2">
+                {{ page.small_right_title }}
+            </h1>
             {% if page.small_right_description %}
                 {{ page.small_right_description | markdownify }}
             {% endif %}
             {% if page.small_right_link %}
                 <div>
-                    <a href="{{ page.small_right_link }}" class="d-ibl"><button class="eyowo-button-white bg-primary radius-50">Sign up/Sign in <span class="suffix">{% include tools/icons.html icon="chevron-right" %}</span></button></a>
+                    <a href="{{ page.small_right_link }}" class="d-ibl">
+                        <button class="eyowo-button-white bg-primary radius-50">
+                            Sign up/Sign in 
+                            <span class="suffix">
+                                {% include tools/icons.html icon="chevron-right" %}
+                            </span></button></a>
                 </div>
             {% endif %}
         </div>
@@ -119,8 +139,8 @@ layout: default
                 </div>
             {% endif %}
         </div>
-        <div class="left-30 wrapper-x d-flx flex-dir-col j-c-c">
-            <img src="{{ page.small_left_video }}" alt="{{ item.title }}">
+        <div class="left-30 wrapper-x d-flx flex-dir-col j-c-c al-i-c">
+            <img src="{{ page.small_left_video }}" alt="{{ item.title }}" style="max-width:296px">
             <!-- <figure>
                 <video src="{{ page.small_left_video }}" width="350px" height="700px" type="video/mp4" controls>
                 </video>
@@ -154,9 +174,9 @@ layout: default
 {% if page.list %}
     <section class="maxwidth-tb mx-auto clearfix">
         <div class="wrapper d-flx flex-dir-col j-c-c al-i-c">
-            <ul class="none">
+            <ul class="none ">
                 {% for item in page.list %}
-                    <h2>{{ item.title }}</h2>
+                    <h4>{{ item.title }}</h4>
                     {{ item.body | markdownify }}
                 {% endfor %}
             </ul>
@@ -187,7 +207,7 @@ layout: default
 
 
 {% if page.is_blog %}
-    <section class="width-100-pc py-2 bg-gray">
+    <section class="width-100-pc py-2 bg-gray  ">
         <div class="maxwidth-sl mx-auto wrapper">
             <div class="grid is-multi-col mostly-3">
                 {% for post in paginator.posts %}

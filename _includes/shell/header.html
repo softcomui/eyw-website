@@ -2,13 +2,17 @@
     <div class="maxwidth-sl mx-auto wrapper-x py-1h">
         <nav class="d-flx j-c-sb al-i-c">
             {% if page.background == "light" %}
-                <div class="logo">
-                    <a href="{{ site.url }}">
-                        <img src="{{ site.url }}/uploads/brand/logo.svg" alt="">
-                    </a>
-                </div>
+            <div class="logo">
+                <a href="{{ site.url }}">
+                    <img src="{{ site.url }}/uploads/brand/logo.svg" alt="brand logo">
+                </a>
+            </div>
             {% elsif page.background == "dark" %}
-                <div class="logo"><a href="{{ site.url }}"><img src="{{ site.url }}/uploads/brand/white-logo.svg" alt=""></a></div>
+            <div class="logo">
+                <a href="{{ site.url }}">
+                    <img src="{{ site.url }}/uploads/brand/white-logo.svg" alt="">
+                </a>
+            </div>
             {% endif %}
             {% if page.background == "light" %}
             <ul class="none al-i-c topmenu">
@@ -25,7 +29,9 @@
                 {% endfor %}
                 <li>
                     <a href="{{ site.app_url }}" target="_blank">
-                        <button class="microtext radius-50 eyowo-button">MY EYOWO</button>
+                        <button class="microtext radius-50 eyowo-button">
+                            MY EYOWO
+                        </button>
                     </a>
                 </li>
             </ul>
@@ -72,7 +78,9 @@
         {% endfor %}
         <li>
             <a href="">
-                <button class="smalltext px-2 radius-50 btn btn-brand">MY EYOWO</button>
+                <button class="smalltext px-2 radius-50 btn btn-brand">
+                    MY EYOWO
+                </button>
             </a>
         </li>
     </ul>

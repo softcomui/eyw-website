@@ -4,7 +4,7 @@ layout: default
 
 <section class="maxwidth-sl mx-auto clearfix">
     <div class="left-70 wrapper min-height-100-vh d-flx pt-2 flex-dir-col j-c-c">
-        <h1 class="pt-2 mt-2">
+        <h1 class="pt-2 mt-0">
             {{page.main_title1}}
             <br/>
             <span class="co-primary">
@@ -38,7 +38,9 @@ layout: default
                 <img src="{{ site.url }}/uploads/people/eyowo-in-action-x.jpg" class="cardshadow" alt="{{ item.title }}" class="stacked-tile-image obj-fit-cover is-raised">
             </div>
             <div class="stacked-tile-body card is-raised wrapper will-grow gradient-from-left p-left">
-                <h2 class="mt-0">{{page.action_title}}</h2>
+                <h2 class="mt-0">
+                    {{page.action_title}}
+                </h2>
                 {{page.action_paragraph | markdownify }}
             </div>
         </div>
@@ -48,7 +50,9 @@ layout: default
 <!-- How it works -->
 <section class="maxwidth-tb mx-auto wrapper my-1">
     <div class="tx-c">
-        <h2>{{page.how_it_works_title}}</h2>
+        <h2>
+            {{page.how_it_works_title}}
+        </h2>
         {{page.how_it_works_paragraph | markdownify }}
     </div>
 </section>
@@ -64,10 +68,19 @@ layout: default
                 <img src="{{ site.url }}/uploads/people/for-every-one-x.jpg" class="cardshadow" alt="{{ item.title }}" class="stacked-tile-image obj-fit-cover is-raised">
             </div>
             <div class="stacked-tile-body card is-raised wrapper will-grow gradient-from-right p-left">
-                <h2>{{page.for_everyone_title}}</h2>
+                <h2 class="mt-0">
+                    {{page.for_everyone_title}}
+                </h2>
                 {{page.for_everyone_paragraph | markdownify }}
                 <div>
-                    <a href="{{ site.url }}/experience" class="d-ibl"><button class="eyowo-button-white bg-primary radius-50">Visit My Eyowo <span class="suffix">{% include tools/icons.html icon="chevron-right" %}</span></button></a>
+                    <a href="{{ site.url }}/experience" class="d-ibl">
+                        <button class="eyowo-button-white bg-primary radius-50">
+                            Visit My Eyowo 
+                            <span class="suffix">
+                                {% include tools/icons.html icon="chevron-right" %}
+                            </span>
+                        </button>
+                    </a>
                 </div>
             </div>
         </div>
@@ -79,9 +92,13 @@ layout: default
     <img src="{{ site.url }}/uploads/pages/business-screen-x.jpg" class="absolute-zero bg-image" alt="">
     <div class="maxwidth-sl mx-auto clearfix page-content">
         <div class="left-30 wrapper d-flx pt-2 flex-dir-col j-c-c co-whitesmoke">
-            <h2 class="co-white">{{page.for_business_title}}</h2>
+            <h2 class="co-white mt-0">
+                {{page.for_business_title}}
+            </h2>
             {{page.for_business_paragraph | markdownify }}
-            <p class="smalltext fw-bold">Download Eyowo for Business</p>
+            <p class="smalltext fw-bold">
+                Download Eyowo for Business
+            </p>
             <div class="grid-2 gg width-280">
             <a href="https://itunes.apple.com/ng/app/eyowo/id1353757720?mt=8" class="d-blk">
                 <img src="{{ site.url }}/uploads/icons/apple-white.svg" alt="">
@@ -118,10 +135,19 @@ layout: default
                 <img class="cardshadow" src="{{ site.url }}/uploads/people/for-kiosk-x.jpg" alt="{{ item.title }}" class="stacked-tile-image obj-fit-cover is-raised">
             </div>
             <div class="stacked-tile-body card is-raised wrapper will-grow gradient-from-left p-left">
-                <h2>{{page.for_kiosk_title}}</h2>
+                <h2 class="mt-0">
+                    {{page.for_kiosk_title}}
+                </h2>
                 {{ page.for_kiosk_paragraph | markdownify }}
                 <div>
-                    <a href="{{ site.url }}/experience" class="d-ibl"><button class="eyowo-button-white bg-primary radius-50">Sign up/Sign in <span class="suffix">{% include tools/icons.html icon="chevron-right" %}</span></button></a>
+                    <a href="{{ site.url }}/experience" class="d-ibl">
+                        <button class="eyowo-button-white bg-primary radius-50">
+                            Sign up/Sign in 
+                            <span class="suffix">
+                                {% include tools/icons.html icon="chevron-right" %}
+                            </span>
+                        </button>
+                    </a>
                 </div>
             </div>
         </div>
@@ -132,7 +158,9 @@ layout: default
 <section class="what-we-do width-100-pc">
     <div class="maxwidth-tb mx-auto wrapper">
         <article class="tx-l">
-            <h2>{{page.why_we_do-it_title}}</h2>
+            <h2>
+                {{page.why_we_do-it_title}}
+            </h2>
             {{ page.why_we_do-it_paragraph | markdownify }}
         </article>
     <!-- carousel -->
@@ -152,12 +180,11 @@ layout: default
 
 {% include lists/mobile-experience.html %}
 
-
-
 <div id="myModal" class="video-modal">
-
     <div class="video-content p-2">
-        <span class="video-close">&times;</span>
+        <span class="video-close">
+            &times;
+        </span>
         <div>
             <iframe class="modal-iframe" width="100%" src="" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
         </div>

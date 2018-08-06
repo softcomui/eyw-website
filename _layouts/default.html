@@ -2,7 +2,9 @@
     {% include shell/head.html %}
     <body {% if page.layout %}class="is-{{ page.layout }}"{% endif %}>
         <a class="skip-link sr" href="#main"></a>
-        <h1 class="sr">{{ site.title }}</h1>
+        <h1 class="sr">
+            {{ site.title }}
+        </h1>
         {% include shell/header.html %}
         <main class="bg-white" navcontrol>
             {{ content }}

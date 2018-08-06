@@ -1,5 +1,7 @@
 <nav class="prev-next-post-nav">
-    <h3 class="sr">Previous &amp; next to {{ page.title }}</h3>
+    <h3 class="sr">
+        Previous &amp; next to {{ page.title }}
+    </h3>
     {% if page.previous.url %}
         <a href="{{ page.previous.url | prepend: site.url }}" class="wrapper-y post-nav-item prev d-flx al-i-c h4 m-0">
             {% include tools/icons.html icon="arrow-left" %} 

@@ -1,25 +1,22 @@
 <a class="bottomshadow co-sweetgray bg-white d-flx flex-dir-col j-c-sb height-100-pc" href="{{ post.url | prepend: site.url }}">
     <img class="blog-feature-image" src="{{ post.feature_image | prepend: site.url }}" alt="">
     <div class="d-flx p-1 co-extra flex-dir-col j-c-sb height-100-pc">
-        <div>
-            <div class="d-flx al-i-c j-c-sb ff-sans-serif">
-                {% assign topic = site.topics | where: 'title', post.topic | first %}
-                {% if topic %}
-                    <p class="mb-0 small-nano-caps">
-                        {{ topic.title }}
-                    </p>
-                {% endif %}
-                <p class="nanotext">
-                    {{ post.date | date: "%b %-d, %Y" }}
-                </p>
-            </div>
-            <div class="co-richblack nanotext mb-1hh">
-                <h2 class="mediumtext py-h  m-0 blog-featurelh">
-                    {{ post.title }}
-                </h2>
-                <div class="co-sweetgray blog-featurelh">
+        <div class="d-flx al-i-c j-c-sb ff-sans-serif">
+            {% assign topic = site.topics | where: 'title', post.topic | first %} {% if topic %}
+            <p class="mb-0 small-nano-caps">
+                {{ topic.title }}
+            </p>
+            {% endif %}
+            <p class="small-nano-caps">
+                {{ post.date | date: "%b %-d, %Y" }}
+            </p>
+        </div>
+        <div class="co-richblack nanotext mb-1hh">
+            <h2 class="mediumtext py-h  m-0 blog-featurelh">
+                {{ post.title }}
+            </h2>
+            <div class="co-sweetgray blog-featurelh">
                 {{ post.content | truncate: 80, '...' }}
-                </div>
             </div>
         </div>
         <div class="d-flx al-i-c pt-h small-nano-caps ff-sans-serif">

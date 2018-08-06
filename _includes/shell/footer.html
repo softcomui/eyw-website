@@ -9,22 +9,26 @@
             </p>
         </div>
         {% for item in site.footer %}
-            <div class="col">
-                <h3 class="mt-0 h smalltext">{{ item.title }}</h3>
-                <ul class="none">
-                    {% for entry in item.pages %}
-                        <li>
-                            <a href="{{ entry.link | prepend: site.url }}" class="microtext">
-                                {{ entry.page }}
-                            </a>
-                        </li>
-                    {% endfor %}
-                </ul>
-            </div>
+        <div class="col">
+            <h3 class="mt-0 h smalltext">
+                {{ item.title }}
+            </h3>
+            <ul class="none">
+                {% for entry in item.pages %}
+                    <li>
+                        <a href="{{ entry.link | prepend: site.url }}" class="microtext">
+                            {{ entry.page }}
+                        </a>
+                    </li>
+                {% endfor %}
+            </ul>
+        </div>
         {% endfor %}
         <div class="col">
             {% for item in site.social_media %}
-                <h3 class="mt-0 h smalltext">{{ item.title }}</h3>
+            <h3 class="mt-0 h smalltext">
+                {{ item.title }}
+            </h3>
                 <ul class="none">
                     {% for entry in item.pages %}
                         <li>
@@ -38,13 +42,11 @@
         </div>
     </div>
     <div class="maxwidth-sl mx-auto wrapper">
-        <div>
-            <div class="d-flx j-c-sb al-i-c border-bottom">
-                <p class="nanotext py-1 colophon">Eyowo is a product of <a href="https://www.softcom.ng">Softcom Ltd.</a></p>
-            </div>
-            <p class="colophon py-1 nanotext">
-                Copyright &copy; {{ 'now' | date: "%Y" }} Softcom Ltd. All rights reserved. <a href="">legal</a>
-            </p>
+        <div class="d-flx j-c-sb al-i-c border-bottom">
+            <p class="nanotext py-1 colophon">Eyowo is a product of <a href="https://www.softcom.ng">Softcom Ltd.</a></p>
         </div>
+        <p class="colophon py-1 nanotext">
+            Copyright &copy; {{ 'now' | date: "%Y" }} Softcom Ltd. All rights reserved. <a href="">legal</a>
+        </p>
     </div>
 </footer>
