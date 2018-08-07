@@ -7,7 +7,7 @@ background: dark
 has_big_banner: true
 has_video_link: true
 # video_link: "https://www.youtube.com/embed/bgsuOm_pse4"
-bg_image: /uploads/pages/kiosk-x.jpg
+bg_image: /uploads/pages/kiosk-xdg.jpg
 small_right: true
 small_right_image: /uploads/pages/ussd-code.svg
 small_right_title: "For Kiosk"

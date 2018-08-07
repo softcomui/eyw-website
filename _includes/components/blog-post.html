@@ -19,9 +19,10 @@
                 {{ post.content | truncate: 80, '...' }}
             </div>
         </div>
+
         <div class="d-flx al-i-c pt-h small-nano-caps ff-sans-serif">
             {% assign author = site.authors | where: 'title', post.author | first %} {% if author %}
-            <img class="small-avatar gray-filtered-link radius-50 prefix" src="{{ author.image }}" alt="">
+            <img class="small-avatar radius-50 prefix gray-filtered-link" src="{{ author.image }}" alt="">
             <div class="suffix">
                 <p class="mb-0">
                     {{ author.title }}
