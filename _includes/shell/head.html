@@ -1,4 +1,7 @@
 <head>
+    {% if jekyll.environment == "production" %}
+        {% include components/analytics.html %}
+    {% endif %}
     <title>{{ page.title }} - {{ site.title }}</title>
     <meta charset="{{ site.charset }}">
     <meta name="viewport" content="width=device-width, initial-scale=1">
