@@ -37,7 +37,7 @@ layout: default
 {% if page.has_big_banner %}
     <section class="width-100-pc">
         <div class="pos-r min-h-400 d-flx flex-dir-col j-c-c">
-            <img src="{{ page.bg_image }}" class="absolute-zero bg-image" alt="">
+            <img src="{{ page.bg_image | prepend: site.url }}" class="absolute-zero bg-image" alt="">
             <!-- <div class="absolute-zero bg-big-gradient"></div> -->
             <div class="page-content py-3 wrapper-x d-flx flex-dir-col al-i-c">
                 <h1 class="co-white">
