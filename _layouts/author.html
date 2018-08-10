@@ -5,7 +5,7 @@ layout: default
 <section class="width-100-pc mt-3 pt-2">
     <div class="maxwidth-sl mx-auto wrapper">
         <div class="d-flx flex-dir-col al-i-c">
-            <img class="avatar radius-c" src="{{ page.image }}" alt="">
+            <img class="avatar radius-c" src="{{ page.image | prepend: site.url }}" alt="">
             <h1 class="name">
                 {{ page.title }}
             </h1>

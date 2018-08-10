@@ -7,7 +7,7 @@ layout: default
         <div class="d-flx flex-dir-col al-i-c">
             <h1 class="tx-c">{{ page.title }}</h1>
             <p class="smalltext co-primary py-h">{{ page.date | date: "%b %-d, %Y" }}</p>
-            <img class="min-h-300" src="{{ page.feature_image }}" alt="">
+            <img class="min-h-300" src="{{ page.feature_image | prepend: site.url }}" alt="">
         </div>
     </div>
 </section>

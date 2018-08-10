@@ -6,7 +6,7 @@ layout: default
     <section class="width-100-pc">
         <div class="mx-auto  wrapper">
             <div class="pos-r py-2 mt-3">
-                <img src="{{ page.bg_image }}" class="absolute-zero bg-image" alt="">
+                <img src="{{ page.bg_image | prepend: site.url }}" class="absolute-zero bg-image" alt="">
                 {% if page.url != '/faqs/' %}
                     <div class="absolute-zero bg-big-gradient"></div>
                 {% endif %}
@@ -79,7 +79,7 @@ layout: default
         <div class="maxwidth-sl mx-auto clearfix">
             <div class="stacked-tile wrapper-y will-grow leftpic">
                 <div class="pos-r img-holder">
-                    <img src="{{ page.leftpic_image }}" class="cardshadow" alt="{{ item.title }}" class="stacked-tile-image obj-fit-cover is-raised">
+                    <img src="{{ page.leftpic_image | prepend: site.url }}" class="cardshadow" alt="{{ item.title }}" class="stacked-tile-image obj-fit-cover is-raised">
                 </div>
                 <div class="stacked-tile-body card is-raised wrapper will-grow gradient-from-right p-left">
                     <h2 class="mt-0" >
@@ -113,7 +113,7 @@ layout: default
             {% endif %}
         </div>
         <div class="right-30 wrapper d-flx pt-2 flex-dir-col j-c-c">
-            <img src="/uploads/pages/newussd-x.png" alt="{{ item.title }}" >
+            <img src="{{ site.url }}/uploads/pages/newussd-x.png" alt="{{ item.title }}" >
             <!-- <video src="{{ page.small_right_image }}" width="350px" height="700px" type="video/mp4" controls></video> 
             <video muted="" playsinline="" class="" autoplay="" src="/uploads/videos/eyowo-mobile.gif"
                 style="visibility: visible;"></video> -->
@@ -140,7 +140,7 @@ layout: default
             {% endif %}
         </div>
         <div class="left-30 wrapper-x d-flx flex-dir-col j-c-c al-i-c">
-            <img src="{{ page.small_left_video }}" alt="{{ item.title }}" style="max-width:296px">
+            <img src="{{ page.small_left_video | prepend: site.url }}" alt="{{ item.title }}" style="max-width:296px">
             <!-- <figure>
                 <video src="{{ page.small_left_video }}" width="350px" height="700px" type="video/mp4" controls>
                 </video>
@@ -158,7 +158,7 @@ layout: default
             <div>
                 <a href="https://app.eyowo.com" class="d-ibl" target="blank"><button class="eyowo-button-white bg-primary radius-50">Visit My Eyowo <span class="suffix">{% include tools/icons.html icon="chevron-right" %}</span></button></a>
             </div>
-            <img src="/uploads/pages/desktop.svg" alt="{{ item.title }}">
+            <img src="{{ site.url }}/uploads/pages/desktop.svg" alt="{{ item.title }}">
             <!-- <video type="video/mp4" src="{{ page.center_content_video | prepend: site.url }}" muted loop></video> -->
             <!-- <figure>
                 <video src="{{ page.center_content_video }}" type="video/mp4" width="1000px" controls>
@@ -194,7 +194,7 @@ layout: default
                         <li class="w-100 d-flx tx-c flex-dir-col al-i-c j-c-c">
                             {% include tools/icons.html icon="quote" %}
                             <p class="wrapper-y microtext"><i>{{ item.text }}</i></p>
-                            <img class="avatar radius-c mx-auto" src="{{ item.image }}" alt="">
+                            <img class="avatar radius-c mx-auto" src="{{ item.image | prepend: site.url }}" alt="">
                             <p class="mb-0 mt-1"><strong>{{ item.name }}</strong></p>
                             <p><i>{{ item.address }}</i></p>
                         </li>

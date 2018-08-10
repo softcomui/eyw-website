@@ -169,7 +169,7 @@ layout: default
                 {% for testimonial in page.testimonial_images %}
                     <li class="carousel-cell">
                         <div class="suffix prefix mx-auto">
-                            <img src="{{testimonial.testimonial_image}}" alt="">
+                            <img src="{{testimonial.testimonial_image | prepend: site.url }}" alt="">
                         </div>
                     </li>
                 {% endfor %}
