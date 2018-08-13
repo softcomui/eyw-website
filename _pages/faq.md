@@ -4,7 +4,7 @@ title: FAQs
 permalink: /faqs/
 background: light
 has_small_banner: true
-bg_image: /uploads/pages/faqs-head-x.jpg
+bg_image: https://res.cloudinary.com/softcomux/image/upload/v1534163330/eyw-web/pages/faqs-head.jpg
 list:
 - title: What is Eyowo?
   body: |-

@@ -1,7 +1,7 @@
 ---
 title: The Big Parcel
 date: 2018-07-27
-feature_image: /uploads/pages/blogpost1-x.jpg
+feature_image: https://res.cloudinary.com/softcomux/image/upload/v1534163347/eyw-web/pages/blogpost1.jpg
 topic: Finances
 author: Augustine Ogwo
 username: augustine

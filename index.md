@@ -40,13 +40,13 @@ why_we_do-it_paragraph: |-
     
     Our ultimate aim is financial inclusion for millions of Nigerians who  have phone numbers but no bank accounts.
 testimonial_images:
-- testimonial_image: /uploads/pages/tweet-1.png
-- testimonial_image: /uploads/pages/tweet-2.png
-- testimonial_image: /uploads/pages/tweet-3.png
-- testimonial_image: /uploads/pages/tweet-6.png
-- testimonial_image: /uploads/pages/tweet-7.png
-- testimonial_image: /uploads/pages/tweet-9.png
-- testimonial_image: /uploads/pages/tweet-12.png
-- testimonial_image: /uploads/pages/tweet-13.png
-- testimonial_image: /uploads/pages/tweet-14.png
+- testimonial_image: https://res.cloudinary.com/softcomux/image/upload/v1534163468/eyw-web/pages/tweet-1.png
+- testimonial_image: https://res.cloudinary.com/softcomux/image/upload/v1534163504/eyw-web/pages/tweet-2.png
+- testimonial_image: https://res.cloudinary.com/softcomux/image/upload/v1534163445/eyw-web/pages/tweet-3.png
+- testimonial_image: https://res.cloudinary.com/softcomux/image/upload/v1534163441/eyw-web/pages/tweet-6.png
+- testimonial_image: https://res.cloudinary.com/softcomux/image/upload/v1534163459/eyw-web/pages/tweet-7.png
+- testimonial_image: https://res.cloudinary.com/softcomux/image/upload/v1534163453/eyw-web/pages/tweet-9.png
+- testimonial_image: https://res.cloudinary.com/softcomux/image/upload/v1534163504/eyw-web/pages/tweet-12.png
+- testimonial_image: https://res.cloudinary.com/softcomux/image/upload/v1534163503/eyw-web/pages/tweet-13.png
+- testimonial_image: https://res.cloudinary.com/softcomux/image/upload/v1534163501/eyw-web/pages/tweet-14.png
 ---

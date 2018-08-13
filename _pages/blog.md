@@ -6,7 +6,7 @@ permalink: /blog/
 background: dark
 is_blog: true
 has_big_banner: true
-bg_image: /uploads/pages/conversation-x.jpg
+bg_image: https://res.cloudinary.com/softcomux/image/upload/v1534163332/eyw-web/pages/conversation.jpg
 autopages: true
 pagination:
   enabled: true

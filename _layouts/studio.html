@@ -4,7 +4,7 @@ layout: default
 
 <section class="width-100-pc pos-r">
     <div class="pos-r min-h-400 d-flx flex-dir-col j-c-c">
-        <img src="{{ page.bg_image | prepend: site.url }}" class="absolute-zero bg-image" alt="">
+        <img src="{{ page.bg_image }}" class="absolute-zero bg-image" alt="">
         <div class="absolute-zero bg-big-gradient"></div>
     </div>
 </section>
@@ -16,7 +16,7 @@ layout: default
             {% for item in site.studio %}
                 <a class="d-blk post" href="{{ item.url }}">
                     <div class="adjust-fit">
-                        <img class="adjust-fit" src="{{ item.feature_image | prepend: site.url }}" alt="">
+                        <img class="adjust-fit" src="{{ item.feature_image }}" alt="">
                     </div>
                 </a>
             {% endfor %}

@@ -1,5 +1,5 @@
 <a class="bottomshadow co-sweetgray bg-white d-flx flex-dir-col j-c-sb height-100-pc" href="{{ post.url | prepend: site.url }}">
-    <img class="blog-feature-image" src="{{ post.feature_image | prepend: site.url }}" alt="">
+    <img class="blog-feature-image" src="{{ post.feature_image }}" alt="">
     <div class="d-flx p-1 co-extra flex-dir-col j-c-sb height-100-pc">
         <div class="d-flx al-i-c j-c-sb ff-sans-serif">
             {% assign topic = site.topics | where: 'title', post.topic | first %} {% if topic %}

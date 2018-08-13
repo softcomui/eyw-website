@@ -1,7 +1,7 @@
 ---
 title: Within Reach
 date: 2018-08-13
-feature_image: /uploads/pages/toll-gate-blog-02.png
+feature_image: https://res.cloudinary.com/softcomux/image/upload/v1534163495/eyw-web/pages/toll-gate-blog-02.png
 topic: Fiction
 author: Augustine Ogwo
 username: augustine

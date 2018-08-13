@@ -1,7 +1,7 @@
 ---
 title: Enter Your PIN
 date: 2018-07-28
-feature_image: /uploads/pages/blogpost2-x.png
+feature_image: https://res.cloudinary.com/softcomux/image/upload/v1534163305/eyw-web/pages/blogpost2.png
 topic: Business
 author: Augustine Ogwo
 username: augustine
