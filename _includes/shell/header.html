@@ -64,7 +64,7 @@
         </nav>
     </div>
 </header>
-<div class="mobile-nav pos-f fixed-to-top by-w {% if page.background == 'light' %} bg-white{% elsif page.background == 'dark' %} bg-branddark{% endif %}">
+<div class="mobile-nav pos-f fixed-to-top by-w {% if page.background == 'light' %} bg-white{% elsif page.background == 'dark' %} bg-bdark{% endif %}">
     <ul class="sub-ul none tx-c">
         {% for link in site.mainnav%} {% assign class = "" %}
         {% if link.link == page.url %}
