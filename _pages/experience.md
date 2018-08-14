@@ -23,5 +23,5 @@ small_left_apps:
   image: /uploads/icons/google-dark.svg
 center_content: true
 center_content_title: On The Web
-center_content_video: /uploads/videos/eyowo-gif-web-revised.mp4
+center_content_video: https://res.cloudinary.com/softcomux/video/upload/v1534235985/eyw-web/videos/eyowo-gif-web-revised.mp4
 ---

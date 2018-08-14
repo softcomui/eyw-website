@@ -6,7 +6,7 @@ permalink: /business/
 background: dark
 has_big_banner: true
 has_video_link: true
-video_link: "/uploads/videos/eyowo-merchant-video.mp4"
+video_link: "https://res.cloudinary.com/softcomux/video/upload/v1534238201/eyw-web/videos/eyowo-merchant-video.mp4"
 bg_image: https://res.cloudinary.com/softcomux/image/upload/v1534163330/eyw-web/pages/for-business-bg.jpg
 small_right: true
 small_right_image: https://res.cloudinary.com/softcomux/image/upload/v1534163478/eyw-web/pages/ussd-code.svg
