@@ -13,16 +13,32 @@ small_right_image: https://res.cloudinary.com/softcomux/image/upload/v1534163478
 small_right_title: "For Business"
 small_right_link: /merchant-link
 small_right_description: |-
-    Start receiving payments for your products and services. Your customers can now make instant online and offline payments. Add merchants and tills on your dashboard while monitoring your flow of income.
+    ### Boost your Reach
 
-    Get paid via your own USSD code. Here’s an example: &#42;4255&#42;Unique-Code&#35;.
+    List your business on our ‘Nearby’ feature for everyone on Eyowo to learn more about your  customized USSD menu, products and sales points.
+
+    ### Seamless single and group payments 
+
+    Make payments with ease to bank accounts and phone numbers, all from one central interface.     
+    Payments to your partners, staff and supplier can now be simplified and scheduled.      
+    Pay all your business bills and send airtime to multiple phone numbers without hassles.
+
+    ### Instant reconciliation and seamless reporting
+
+    Track all payments you make and receive. Eyowo allows you filter and search for specific transactions.        
+    Generating reports and managing all your transactions is now so convenient and fast.     
+    Reconcile all transactions and payments with ease.
+ 
+
 has_leftpic: true
-leftpic_title: Easiest way to manage sales
+leftpic_title: Easiest way to receive payments
 leftpic_image: https://res.cloudinary.com/softcomux/image/upload/v1534163384/eyw-web/pages/manage_sales.jpg
 leftpic_body: |-
-    Eyowo grants you access to affordable, convenient and secure financial transactions. It affords you the opportunity to make payments whenever, and however you want it.
+    Receive payments on the go, in-store and across multiple branches with just a phone number. 
 
-    Eyowo users can now easily transfer and receive funds.
+    With Eyowo, your customers can now pay you with just a phone number. It doesn’t matter if you are online or offline.
+
+    Get paid instantly and directly via a customized USSD code. All your customer needs to do is dial * 4255 * Your-Unique-Code * Amount * Customer-PIN # e.g * 4255 * 25 * 1000 * 654321 #
 has_logos: true
 logos:
 - name: Microsoft
