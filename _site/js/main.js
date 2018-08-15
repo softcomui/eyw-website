@@ -22,7 +22,7 @@ var light = document.querySelector(".bg-light");
 if ( logoContainer.classList.contains("bg-dark")) {
     window.addEventListener('scroll', function() {
         scrollPosition = window.scrollY;
-        if (scrollPosition >= 200) {
+        if (scrollPosition >= 10) {
             dark.classList.add('bg-bdark');
         } else {
             dark.classList.remove('bg-bdark');
