@@ -1,7 +1,7 @@
 ---
 layout: topic
-title: Finances
-permalink: /finances
+title: Fiction
+permalink: /fiction
 background: light
 has_small_banner: true
 is_topic: true
