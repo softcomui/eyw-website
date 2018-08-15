@@ -1,7 +1,7 @@
 ---
 layout: topic
 title: Business
-permalink: /investments
+permalink: /business
 background: light
 has_small_banner: true
 is_topic: true
