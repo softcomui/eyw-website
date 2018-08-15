@@ -22,7 +22,7 @@ layout: default
     <div class="maxwidth-sl mx-auto wrapper">
         <div class="grid is-multi-col mostly-3">
             {% assign blog_posts = site.posts %}
-            {% for post in blog_posts limit: 3 %}
+            {% for post in blog_posts %}
                 {% include components/blog-post.html %}
             {% endfor %}
         </div>

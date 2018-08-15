@@ -1,1 +1,1 @@
-Sitemap: https://www.eyowo.com/sitemap.xml
+Sitemap: https://eyowo.com/sitemap.xml

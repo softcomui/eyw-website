@@ -1,12 +1,11 @@
 ---
 title: Enter Your PIN
 date: 2018-07-28
-feature_image: https://res.cloudinary.com/softcomux/image/upload/v1534163305/eyw-web/pages/blogpost2.png
+feature_image: 'https://res.cloudinary.com/softcomux/image/upload/v1534163305/eyw-web/pages/blogpost2.png'
 topic: Business
 author: Augustine Ogwo
 username: augustine
 ---
-
 If you have ever been to a Nigerian ATM, you have probably witnessed one, some or all of these kind of people.
 
 ### All Figured Out

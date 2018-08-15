@@ -1,13 +1,11 @@
 ---
 title: Within Reach
-date: 2018-08-13
-feature_image: https://res.cloudinary.com/softcomux/image/upload/v1534163495/eyw-web/pages/toll-gate-blog-02.png
+date: 2018-08-10
+feature_image: 'https://res.cloudinary.com/softcomux/image/upload/v1534163495/eyw-web/pages/toll-gate-blog-02.png'
 topic: Fiction
 author: Augustine Ogwo
 username: augustine
 ---
-
-
 Mondays are definitely some of the toughest days for Lagosians.
 
 It's another busy morning in the city that never sleeps. Somewhere in the Victoria Garden City area of Lagos, Cyprian has gotten into his G-Wagon and is navigating his way towards Yaba where he owns a tech start-up.
@@ -51,7 +49,3 @@ He drives slowly until he gets to a vulcaniser shop on the Oworonshoki axis of L
 “Oga, just dial *4255# on top your phone make I show you”.
 
 As Cyprian slides his phone out of his tight pants, the vulcanizer kicks the tyre one more time; his own way of gauging pressure.
-
-
-
-
