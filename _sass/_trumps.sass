@@ -6,6 +6,8 @@
 
 // Positioning
 
+.absolute-position
+    position:           absolute
 
 .absolute-zero
     position:           absolute
@@ -18,6 +20,12 @@
     top:                50%
     left:               50%
     transform:          translate( -50%, -50% )
+
+.absolute-right
+    position:           absolute
+    top:                80%
+    // left:               80%
+
 .pos-f
     position:           fixed
     &.fixed-to-top
@@ -32,6 +40,12 @@
     position:           absolute
     @media #{ $mediumdown }
         position:           relative
+
+.pos-atr
+    position:           absolute
+    top:                0
+    right:              0
+    
 
 // Display
 .d-blk
