@@ -2,15 +2,15 @@
 <urlset xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd" xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 <url>
 <loc>https://eyowo.com/augustine</loc>
-<lastmod>2018-08-23T14:35:44+01:00</lastmod>
+<lastmod>2018-08-23T15:03:00+01:00</lastmod>
 </url>
 <url>
 <loc>https://eyowo.com/folake</loc>
-<lastmod>2018-08-23T14:35:44+01:00</lastmod>
+<lastmod>2018-08-23T15:03:00+01:00</lastmod>
 </url>
 <url>
 <loc>https://eyowo.com/seun</loc>
-<lastmod>2018-08-23T14:35:44+01:00</lastmod>
+<lastmod>2018-08-23T15:03:00+01:00</lastmod>
 </url>
 <url>
 <loc>https://eyowo.com/blog/the-bigger-parcel/</loc>
@@ -26,15 +26,15 @@
 </url>
 <url>
 <loc>https://eyowo.com/business</loc>
-<lastmod>2018-08-23T14:35:44+01:00</lastmod>
+<lastmod>2018-08-23T15:03:00+01:00</lastmod>
 </url>
 <url>
 <loc>https://eyowo.com/fiction</loc>
-<lastmod>2018-08-23T14:35:44+01:00</lastmod>
+<lastmod>2018-08-23T15:03:00+01:00</lastmod>
 </url>
 <url>
 <loc>https://eyowo.com/finances</loc>
-<lastmod>2018-08-23T14:35:44+01:00</lastmod>
+<lastmod>2018-08-23T15:03:00+01:00</lastmod>
 </url>
 <url>
 <loc>https://eyowo.com/business/</loc>
@@ -47,6 +47,9 @@
 </url>
 <url>
 <loc>https://eyowo.com/</loc>
+</url>
+<url>
+<loc>https://eyowo.com/kiosk/</loc>
 </url>
 <url>
 <loc>https://eyowo.com/blog/</loc>
