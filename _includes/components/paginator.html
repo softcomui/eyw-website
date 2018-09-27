@@ -1,0 +1,22 @@
+<ul class="none m-0 d-flx al-i-c j-c-sb wrapper-y negate-top">
+    {% if paginator.previous_page %}
+        <li class="previous mb-0">
+            <a href="{{ paginator.previous_page_path | prepend: site.url }}" class="d-flx al-i-c ff-sans-serif icon-move-on-hover">
+                {% include tools/icons.html icon="arrow-left" %}
+                <span class="suffix">
+                    Back
+                </span>
+            </a>
+        </li>
+    {% endif %}
+    {% if paginator.next_page %}
+        <li class="next mb-0">
+            <a href="{{ paginator.next_page_path | prepend: site.url }}" class="d-flx al-i-c ff-sans-serif icon-move-on-hover">
+                <span class="prefix">
+                    Next
+                </span>
+                {% include tools/icons.html icon="arrow-right" %}
+            </a>
+        </li>
+    {% endif %}
+</ul>

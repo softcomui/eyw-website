@@ -1,0 +1,139 @@
+# Site settings
+title: Eyowo
+shortname: eyowo
+abbrev: eyw
+email: people@eyowo.com
+description: Eyowo is the simplest way to send or recieve money online or offline.
+definition: Fast, convenient and secure payments for individuals and businesses.
+url: "https://eyowo.com"
+app_url: "https://app.eyowo.com"
+timezone: Africa/Lagos
+language: en
+footer_text: Eyowo is a service of Softcom Ltd
+softcom_website: https://softcom.ng
+typekit_id: lbi1rxk
+google_analytics_id: 'UA-123315351-1'
+
+# Handling Reading...
+charset: 'utf-8'
+pagination:
+  enabled: true
+  permalink: '/:num/'
+  title: ':title'
+  paginate_path: ":num"
+autopages:
+  # Site-wide kill switch, disable here and it doesn't run at all 
+  enabled: true
+  # Collection pages, omit to disable
+  collections:
+    layouts:
+      - 'page.html'
+    enabled: true
+
+
+# Navigation
+mainnav:
+  - page: Experience it
+    link: /experience/
+  - page: Business
+    link: /business/
+  - page: Kiosk
+    link: /kiosk/
+  - page: Conversations
+    link: /blog/
+  - page: FAQs
+    link: /faqs/
+footer:
+  - title: Product
+    pages:
+      - page: Business
+        link: /business/
+      - page: Kiosk
+        link: /kiosk/
+      - page: FAQs
+        link: /faqs/
+  - title: Resources
+    pages:
+      - page: Conversations
+        link: /blog/
+
+# Social media
+social_media:
+  - title: Connect
+    pages:
+      - name: Facebook 
+        link: myeyowo
+      - name: Twitter
+        link: eyowo
+      - name: Instagram
+        link: myeyowo
+
+
+# Build settings
+markdown: kramdown
+
+
+# Collections
+collections:
+  uploads:
+    title:  Uploads (Media & Files)
+    output: true
+  coversations:
+    title: Conversations
+    output: true
+  authors:
+    title:  Authors
+    output: true
+  topics:
+    title:  Topics
+    output: true
+  studio:
+    title:  Studio
+    output: true
+
+
+
+# Defaults
+defaults:
+  - scope:
+      type: conversations
+    values:
+      permalink: /blog/:title/'
+      layout: single
+      background: light
+      is_blog: true
+  - scope:
+      path: ''
+      type: posts
+    values:
+      permalink: '/blog/:title/'
+      layout: single
+      background: light
+
+
+# Include folders
+include:
+  - _pages
+
+
+# Plugins
+plugins:
+  - jekyll-paginate-v2
+
+
+# Handling Sass
+sass:
+  sass_dir: _sass
+  style: compressed
+
+
+# Exclude from processing.
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - node_modules
+  - vendor/bundle/
+  - vendor/cache/
+  - vendor/gems/
+  - vendor/ruby/
+  - .gitignore

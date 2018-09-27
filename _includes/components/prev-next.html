@@ -1,0 +1,21 @@
+<nav class="prev-next-post-nav">
+    <h3 class="sr">
+        Previous &amp; next to {{ page.title }}
+    </h3>
+    {% if page.previous.url %}
+        <a href="{{ page.previous.url | prepend: site.url }}" class="wrapper-y post-nav-item prev d-flx al-i-c h4 m-0">
+            {% include tools/icons.html icon="arrow-left" %} 
+            <span class="suffix is-wider">
+                {{ page.previous.title }}
+            </span>
+        </a>
+    {% endif %}
+    {% if page.next.url %}
+        <a href="{{ page.next.url | prepend: site.url }}" class="wrapper-y post-nav-item next d-flx al-i-c h4 m-0">
+            <span class="prefix is-wider">
+                {{ page.next.title }}
+            </span>
+            {% include tools/icons.html icon="arrow-right" %}
+        </a>
+    {% endif %}
+</nav>

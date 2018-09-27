@@ -1,0 +1,212 @@
+---
+layout: default
+---
+
+<section class="maxwidth-sl mx-auto clearfix">
+    <div class="left-70 wrapper min-height-100-vh d-flx pt-2 flex-dir-col j-c-c">
+        <h1 class="pt-2 mt-0">
+            {{page.main_title1}}
+            <br/>
+            <span class="co-primary">
+                {{page.main_title2}}
+            </span>
+        </h1>
+        {{ page.main_paragraph | markdownify }}
+        <div class="d-ibl mt-1">
+            <a href="{{ site.url }}/experience" class="d-ibl">
+                <button class="eyowo-button bg-primary radius-50">
+                    {% include tools/icons.html icon="cowrie" %} EXPERIENCE EYOWO
+                </button>
+            </a>
+        </div>
+    </div>
+    <div class="right-30 wrapper min-height-100-vh d-flx flex-dir-col j-c-c">
+        <figure class="eyowo-image p-0 pt-2 ">
+            <img src="{{ site.url }}/uploads/pages/ussd.svg" alt="">
+        </figure>
+    </div>
+</section>
+
+<!-- Eyowo in action -->
+<section class="width-100-pc mt-1">
+    <div class="maxwidth-sl mx-auto clearfix">
+        <div class="stacked-tile wrapper-y will-grow rightpic">
+            <div class="pos-r img-holder">
+                <button class="action-button video-button absolute-middle" data-video-link="https://www.youtube.com/embed/-9WFWI16yzU">
+                    <!-- {% include tools/icons.html icon="play-button" %} -->
+                </button>
+                <!-- <img src="uploads/people/eyowo-in-action.jpg" alt="{{ item.title }}" class="cardshadow stacked-tile-image obj-fit-cover is-raised"> -->
+                <img srcset="{{ site.url }}/uploads/people/eyowo-in-action1.jpg 576w,
+                            {{ site.url }}/uploads/people/eyowo-in-action2.jpg 768w,
+                            {{ site.url }}/uploads/people/eyowo-in-action3.jpg 960w,
+                            {{ site.url }}/uploads/people/eyowo-in-action4.jpg 1440w"
+                    src="{{ site.url }}/uploads/people/eyowo-in-action4.jpg" class="cardshadow stacked-tile-image obj-fit-cover is-raised" alt="{{ item.title }}">
+            </div>
+            <div class="stacked-tile-body card is-raised wrapper will-grow gradient-from-left p-left">
+                <h2 class="mt-0">
+                    {{page.action_title}}
+                </h2>
+                {{page.action_paragraph | markdownify }}
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- How it works -->
+<section class="maxwidth-tb mx-auto wrapper my-1">
+    <div class="tx-c">
+        <h2>
+            {{page.how_it_works_title}}
+        </h2>
+        {{page.how_it_works_paragraph | markdownify }}
+    </div>
+</section>
+
+<!-- for everyone -->
+<section class="width-100-pc mt-1">
+    <div class="maxwidth-sl mx-auto clearfix">
+        <div class="stacked-tile wrapper-y will-grow leftpic">
+            <div class="pos-r img-holder">
+                <button class="everyone-button video-button absolute-middle" data-video-link="https://www.youtube.com/embed/-9WFWI16yzU">
+                    <!-- {% include tools/icons.html icon="play-button" %} -->
+                </button>
+                <!-- <img src="uploads/people/for-every-one.jpg" class="cardshadow" alt="{{ item.title }}" class="stacked-tile-image obj-fit-cover is-raised"> -->
+                <img srcset="{{ site.url }}/uploads/people/for-every-one1.jpg 576w,
+                            {{ site.url }}/uploads/people/for-every-one2.jpg 768w,
+                            {{ site.url }}/uploads/people/for-every-one3.jpg 960w,
+                            {{ site.url }}/uploads/people/for-every-one4.jpg 1440w"
+                    src="{{ site.url }}/uploads/people/for-every-one4.jpg" class="cardshadow stacked-tile-image obj-fit-cover is-raised" alt="{{ item.title }}">
+            </div>
+            <div class="stacked-tile-body card is-raised wrapper will-grow gradient-from-right p-left">
+                <h2 class="mt-0">
+                    {{page.for_everyone_title}}
+                </h2>
+                {{page.for_everyone_paragraph | markdownify }}
+                <div>
+                    <a href="{{ site.url }}/experience" class="d-ibl">
+                        <button class="eyowo-button-white bg-primary radius-50">
+                            Visit My Eyowo 
+                            <span class="suffix">
+                                {% include tools/icons.html icon="chevron-right" %}
+                            </span>
+                        </button>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- For business -->
+<section class="width-100-pc bg-home-business my-3 pos-r">
+    <!-- <img src="uploads/pages/business-screen.jpg" class="absolute-zero bg-image" alt=""> -->
+    <img srcset="{{ site.url }}/uploads/pages/for-business1.jpg 576w,
+                {{ site.url }}/uploads/pages/for-business2.jpg 768w,
+                {{ site.url }}/uploads/pages/for-business3.jpg 960w,
+                {{ site.url }}/uploads/pages/for-business4.jpg 1440w"
+        src="{{ site.url }}/uploads/pages/for-business4.jpg" class="absolute-zero bg-image" alt="{{ item.title }}">
+    <div class="maxwidth-sl mx-auto clearfix page-content">
+        <div class="left-30 wrapper d-flx pt-2 flex-dir-col j-c-c co-whitesmoke">
+            <h2 class="co-white mt-0">
+                {{page.for_business_title}}
+            </h2>
+            {{page.for_business_paragraph | markdownify }}
+            <p class="smalltext fw-bold">
+                Download Eyowo for Business
+            </p>
+            <div class="grid-2 gg width-280">
+            <a href="https://itunes.apple.com/ng/app/eyowo/id1353757720?mt=8" class="d-blk">
+                <img src="{{ site.url }}/uploads/icons/apple-white.svg" alt="">
+            </a>
+            <a href="https://play.google.com/store/apps/details?id=com.eyowo.till.android" class="d-blk">
+                <img src="{{ site.url }}/uploads/icons/google-white.svg" alt="">
+            </a>
+                <!--<a href="" class="d-blk">
+                    <img src="{{ site.url }}/uploads/icons/apple-white.svg" alt="">
+                </a>
+                <a href="" class="d-blk">
+                    <img src="{{ site.url }}/uploads/icons/google-white.svg" alt="">
+                </a>
+            </div> -->
+            <div class="width-280 my-2">
+                <div class="pos-r microtext py-h"> 
+                    <!-- add the "microtext py-h" class back to the <p class="">See how businesses are using Eyowo</p> below -->
+                    <!-- <img src="{{ site.url }}/uploads/pages/for-business.jpg" alt=""> -->
+                    <!-- <video class="business-button video-button absolute-middle" src="https://res.cloudinary.com/softcomux/video/upload/v1534238201/eyw-web/videos/eyowo-merchant-video.mp4">
+                        {% include tools/icons.html icon="play-button" %}
+                    </video>
+                </div> -->
+                <!-- <p class="">See how businesses are using Eyowo</p> -->
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- for kiosk -->
+<section class="width-100-pc mt-1">
+    <div class="maxwidth-sl mx-auto">
+        <div class="stacked-tile wrapper-y will-grow rightpic">
+            <div class="pos-r img-holder">
+                <img srcset="{{ site.url }}/uploads/people/for-kiosk1.jpg 576w,
+                            {{ site.url }}/uploads/people/for-kiosk2.jpg 768w,
+                            {{ site.url }}/uploads/people/for-kiosk3.jpg 960w,
+                            {{ site.url }}/uploads/people/for-kiosk4.jpg 1440w"
+                    src="{{ site.url }}/uploads/people/for-kiosk4.jpg" class="stacked-tile-image obj-fit-cover is-raised cardshadow" alt="{{ item.title }}">
+            </div>
+            <div class="stacked-tile-body card is-raised wrapper will-grow gradient-from-left p-left">
+                <h2 class="mt-0">
+                    {{page.for_kiosk_title}}
+                </h2>
+                {{ page.for_kiosk_paragraph | markdownify }}
+                <div>
+                    <a href="{{ site.url }}/experience" class="d-ibl">
+                        <button class="eyowo-button-white bg-primary radius-50">
+                            Sign up/Sign in 
+                            <span class="suffix">
+                                {% include tools/icons.html icon="chevron-right" %}
+                            </span>
+                        </button>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Why we do what we do -->
+<section class="what-we-do width-100-pc">
+    <div class="maxwidth-tb mx-auto wrapper">
+        <article class="tx-l">
+            <h2>
+                {{page.why_we_do-it_title}}
+            </h2>
+            {{ page.why_we_do-it_paragraph | markdownify }}
+        </article>
+    <!-- carousel -->
+        <div class="pt-2">
+            <ul class="carousel first-carousel none" data-flickity='{ "autoPlay": 6000, "adaptiveHeight": true, "contain": true, "prevNextButtons": false, "pageDots": true, "wrapAround": true}'>
+                {% for testimonial in page.testimonial_images %}
+                    <li class="carousel-cell">
+                        <div class="suffix prefix mx-auto">
+                            <img src="{{ testimonial.testimonial_image | prepend: site.url }}" alt="">
+                        </div>
+                    </li>
+                {% endfor %}
+            </ul>
+        </div>
+    </div>
+</section>
+
+{% include lists/mobile-experience.html %}
+
+<div id="myModal" class="video-modal">
+    <div class="video-content p-2">
+        <span class="video-close">
+            &times;
+        </span>
+        <div>
+            <iframe class="modal-iframe" width="100%" src="" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+        </div>
+    </div>
+    
+</div>

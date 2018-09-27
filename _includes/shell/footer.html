@@ -1,0 +1,52 @@
+<footer class="site-footer bg-branddark alter-text">
+    <div class="columns maxwidth-sl mx-auto wrapper will-grow">
+        <div class="definition-area col d-flx">
+            <a href="{{ site.url }}" class="opacity-1-link">
+                {% include tools/icons.html icon="icon" %}
+            </a>
+            <p class="mb-0 microtext suffix is-even-wider maxwidth-xxs">
+                {{ site.definition }}
+            </p>
+        </div>
+        {% for item in site.footer %}
+        <div class="col">
+            <h3 class="mt-0 h smalltext">
+                {{ item.title }}
+            </h3>
+            <ul class="none">
+                {% for entry in item.pages %}
+                    <li>
+                        <a href="{{ entry.link | prepend: site.url }}" class="microtext">
+                            {{ entry.page }}
+                        </a>
+                    </li>
+                {% endfor %}
+            </ul>
+        </div>
+        {% endfor %}
+        <div class="col">
+            {% for item in site.social_media %}
+            <h3 class="mt-0 h smalltext">
+                {{ item.title }}
+            </h3>
+                <ul class="none">
+                    {% for entry in item.pages %}
+                        <li>
+                            <a href="//{{ entry.name | downcase }}.com/{{ entry.link }}" class="microtext" target="_blank">
+                                {{ entry.name }}
+                            </a>
+                        </li>
+                    {% endfor %}
+                </ul>
+            {% endfor %}
+        </div>
+    </div>
+    <div class="maxwidth-sl mx-auto wrapper">
+        <div class="d-flx j-c-sb al-i-c border-bottom">
+            <p class="nanotext py-1 colophon">Eyowo is a product of <a href="https://www.softcom.ng">Softcom Ltd.</a></p>
+        </div>
+        <p class="colophon py-1 nanotext">
+            Copyright &copy; {{ 'now' | date: "%Y" }} Softcom Ltd. All rights reserved. <a href="">legal</a>
+        </p>
+    </div>
+</footer>

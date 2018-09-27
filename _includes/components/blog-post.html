@@ -1,0 +1,44 @@
+<a class="bottomshadow co-sweetgray bg-white d-flx flex-dir-col j-c-sb height-100-pc" href="{{ post.url | prepend: site.url }}">
+    <!-- <img class="blog-feature-image" src="{{ post.feature_image }}" alt=""> -->
+    <img srcset="{{ post.feature_image1 | prepend: site.url }} 576w,
+                {{ post.feature_image2 | prepend: site.url }} 768w,
+                {{ post.feature_image3 | prepend: site.url }} 960w,
+                {{ post.feature_image4 | prepend: site.url }} 1440w"
+        src="{{ post.feature_image4 | prepend: site.url }}" class="blog-feature-image" alt="">
+    <div class="d-flx p-1 co-extra flex-dir-col j-c-sb height-100-pc">
+        <div class="d-flx al-i-c j-c-sb ff-sans-serif">
+            {% assign topic = site.topics | where: 'title', post.topic | first %} {% if topic %}
+            <p class="mb-0 small-nano-caps">
+                {{ topic.title }}
+            </p>
+            {% endif %}
+            <p class="small-nano-caps">
+                {{ post.date | date: "%b %-d, %Y" }}
+            </p>
+        </div>
+        <div class="co-richblack nanotext mb-1hh">
+            <h2 class="mediumtext py-h  m-0 blog-featurelh">
+                {{ post.title }}
+            </h2>
+            <div class="co-sweetgray blog-featurelh">
+                {{ post.content | | truncatewords: 12, '...' }}
+            </div>
+        </div>
+
+        <div class="d-flx al-i-c pt-h small-nano-caps ff-sans-serif">
+            {% assign author = site.authors | where: 'title', post.author | first %} {% if author %}
+            <!-- <img src="{{ author.image }}" class="small-avatar radius-50 prefix gray-filtered-link" alt=""> -->
+            <img srcset="{{ author.image1 | prepend: site.url}} 576w,
+                        {{ author.image2 | prepend: site.url}} 768w,
+                        {{ author.image3 | prepend: site.url}} 960w,
+                        {{ author.image4 | prepend: site.url}} 1440w"
+                            src="{{ author.image4 | prepend: site.url}}" class="small-avatar radius-50 prefix gray-filtered-link" alt="">
+            <div class="suffix">
+                <p class="mb-0">
+                    {{ author.title }}
+                </p>
+            </div>
+            {% endif %}
+        </div>
+    </div>
+</a>

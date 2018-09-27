@@ -1,0 +1,45 @@
+// 
+    // Floats
+
+    // @package eyw
+    // @author  Kabolobari Benakole <i@kb.life>
+
+.clearfix
+    &::before, &::after
+        content:                ''
+        display:                table
+        clear:                  both
+
+.left-70
+    @media #{$mediumup}
+        width:              60%
+        float:              left
+.right-30
+    @media #{$mediumup}
+        width:              40%
+        float:              right
+.left-30
+    @media #{$mediumup}
+        width:              40%
+        float:              left
+.right-70
+    @media #{$mediumup}
+        width:              60%
+        float:              right
+.left-70-persisted
+        width:              64%
+        float:              left
+.right-30-persisted
+        width:              36%
+        float:              right
+
+.right
+    right:                  0
+    top:                    0
+.z-300
+    z-index:                180
+.y-300
+    margin-top:             -300px
+    @media #{$mediumup}
+        margin-top:             -450px
+    

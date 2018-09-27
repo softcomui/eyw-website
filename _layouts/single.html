@@ -1,0 +1,57 @@
+---
+layout: default
+---
+<!-- class="addthis_sharing_toolbox" data-title="{{ post.title }}" data-description="{{ post.content | truncatewords: 8, '...' }}" -->
+<!-- data-media="{{ post.feature_image }}" data-url="{{ post.permalink }}"> -->
+<section class="width-100-pc mt-3 pt-2">
+    <div class="maxwidth-sl mx-auto wrapper" >
+        <div class="d-flx flex-dir-col al-i-c">
+            <h1 class="tx-c">{{ page.title }}</h1>
+            <p class="smalltext co-primary py-h">{{ page.date | date: "%b %-d, %Y" }}</p>
+            <!-- <img class="min-h-300" src="{{ page.feature_image }}" alt=""> -->
+            <img srcset="{{ page.feature_image1 | prepend: site.url }} 576w,
+                        {{ page.feature_image2 | prepend: site.url }} 768w,
+                        {{ page.feature_image3 | prepend: site.url }} 960w,
+                        {{ page.feature_image4 | prepend: site.url }} 1440w"
+                src="{{ page.feature_image4 | prepend: site.url }}" class="min-h-300" alt="">
+        </div>
+    </div>
+</section>
+
+<section class="width-100-pc pb-2">
+    <div class="maxwidth-tb mx-auto wrapper">
+        {{ content }}
+    </div>
+</section>
+
+<section class="width-100-pc py-2 bg-gray">
+    <div class="maxwidth-sl mx-auto wrapper">
+        <div class="grid is-multi-col mostly-3">
+            {% assign blog_posts = site.posts %}
+            {% for post in blog_posts %}
+                {% include components/blog-post.html %}
+            {% endfor %}
+        </div>
+    </div>
+</section>
+{% if page.comments %} 
+    <div id="disqus_thread" class="maxwidth-sl mx-auto py-2 wrapper"></div>
+    <script>
+        /**
+        *  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
+        *  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables*/
+        
+        var disqus_config = function () {
+        this.page.url = '{{ post.url }}' ;  // Replace PAGE_URL with your page's canonical URL variable
+        this.page.identifier = '{{ post.url }}' ; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+        };
+        (function () { // DON'T EDIT BELOW THIS LINE
+            var d = document, s = d.createElement('script');
+            s.src = 'https://eyowo-com-1.disqus.com/embed.js';
+            s.setAttribute('data-timestamp', +new Date());
+            (d.head || d.body).appendChild(s);
+        })();
+    </script>
+    <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+{% endif %}
+{% include lists/mobile-experience.html %}

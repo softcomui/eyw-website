@@ -1,0 +1,291 @@
+---
+layout: default
+---
+
+{% if page.has_small_banner %}
+    <section class="width-100-pc">
+        <div class="mx-auto  wrapper">
+            <div class="pos-r py-2 mt-3">
+                <img srcset="{{ page.bg_image1 | prepend: site.url }} 576w,
+                            {{ page.bg_image2 | prepend: site.url }} 768w,
+                            {{ page.bg_image3 | prepend: site.url }} 960w,
+                            {{ page.bg_image4 | prepend: site.url }} 1440w"
+                    src="{{ page.bg_image4 | prepend: site.url }}" class="absolute-zero bg-image"
+                    alt="">
+                {% if page.url != '/faqs/' %}
+                    <div class="absolute-zero bg-big-gradient"></div>
+                {% endif %}
+                <div class="page-content py-3 wrapper-x d-flx flex-dir-col al-i-c">
+                    <h1 class="co-white">
+                        {{ page.title }}
+                    </h1>
+                    <p class="co-whitesmoke nanotext py-h">
+                        {{ page.description }}
+                    </p>
+                    {% if page.has_form %}
+                        <form action="">
+                            <label class="d-flx radius-50">
+                                <input type="text" placeholder="Enter Phone Number" autofocus>
+                                <button class="eyowo-button radius-50 microtext">
+                                    GET PAID
+                                </button>
+                            </label>
+                        </form>
+                    {% endif %}
+                </div>
+            </div>
+        </div>
+    </section>
+{% endif %}
+
+
+{% if page.has_big_banner %}
+    <section class="width-100-pc">
+        <div class="pos-r min-h-400 d-flx flex-dir-col j-c-c">
+            <img srcset="{{ page.bg_image1 | prepend: site.url }} 576w,
+                        {{ page.bg_image2 | prepend: site.url }} 768w,
+                        {{ page.bg_image3 | prepend: site.url }} 960w,
+                        {{ page.bg_image4 | prepend: site.url }} 1440w"
+                src="{{ page.bg_image4 | prepend: site.url }}" class="absolute-zero bg-image" alt="">
+            <div class="page-content py-3 wrapper-x d-flx flex-dir-col al-i-c">
+                <h1 class="co-white">
+                    {{ page.title }}
+                </h1>
+                <p class="co-whitesmoke py-h">
+                    {{ page.description }}
+                </p>
+                {% if page.has_video_link %}
+                <!-- <video class="play-button video-button" src="{{ page.video_link }}"  type="video/mp4">
+                        {% include tools/icons.html icon="play-button" %}
+                </video> -->
+                <!-- <video class="" src="https://res.cloudinary.com/softcomux/video/upload/v1534238201/eyw-web/videos/eyowo-merchant-video.mp4" controls> 
+                     {% include tools/icons.html icon="play-button" %}
+                </video> -->
+                <!-- <button class="play-button video-button" data-video-link="{{ page.video_link }}">
+                    {% include tools/icons.html icon="play-button" %}
+                </button> -->
+                {% endif %}
+            </div>
+        </div>
+    </section>
+{% endif %}
+
+
+<!-- {% if page.has_logos %}
+    <section class="maxwidth-sl mx-auto clearfix">
+        <div class="wrapper mx-auto grid-logos">
+            {% for item in page.logos %}
+                <div>
+                    <img class="logo-contain" src="{{ item.image }}" title="{{ item.name }}" alt="{{ item.name }}">
+                </div>
+            {% endfor %}
+        </div>
+    </section>
+{% endif %} -->
+
+
+{% if page.has_leftpic %}
+    <section class="width-100-pc mt-1">
+        <div class="maxwidth-sl mx-auto clearfix">
+            <div class="stacked-tile wrapper-y will-grow leftpic">
+                <div class="pos-r img-holder">
+                    <img srcset="{{ page.leftpic_image1 | prepend: site.url }} 576w,
+                                {{ page.leftpic_image2 | prepend: site.url }} 768w,
+                                {{ page.leftpic_image3 | prepend: site.url }} 960w,
+                                {{ page.leftpic_image4 | prepend: site.url }} 1440w"
+                        src="{{ page.leftpic_image4 | prepend: site.url }}" class="cardshadow stacked-tile-image obj-fit-cover is-raised" alt="{{ item.title }}">
+                </div>
+                <div class="stacked-tile-body card is-raised wrapper will-grow gradient-from-right p-left">
+                    <h2 class="mt-0" >
+                        {{ page.leftpic_title }}
+                    </h2>
+                    {{ page.leftpic_body | markdownify }}
+                </div>
+            </div>
+        </div>
+    </section>
+{% endif %}
+
+{% if page.small_right %}
+    <section class="maxwidth-lt mx-auto clearfix">
+        <div class="left-70 wrapper d-flx pt-2 flex-dir-col ">
+            <h1 class="mt-0 pt-2">
+                {{ page.small_right_title }}
+            </h1>
+            {% if page.small_right_description %}
+                {{ page.small_right_description | markdownify }}
+            {% endif %}
+            {% if page.small_right_link %}
+                <div>
+                    <a href="{{ page.small_right_link }}" class="d-ibl">
+                        <button class="eyowo-button-white bg-primary radius-50">
+                            Sign up/Sign in 
+                            <span class="suffix">
+                                {% include tools/icons.html icon="chevron-right" %}
+                            </span></button></a>
+                </div>
+            {% endif %}
+        </div>
+        <div class="right-30 wrapper d-flx pt-2 flex-dir-col j-c-c">
+            <img srcset="{{ site.url }}/uploads/pages/newussd1.png 576w,
+                        {{ site.url }}/uploads/pages/newussd2.png 768w,
+                        {{ site.url }}/uploads/pages/newussd3.png 960w,
+                        {{ site.url }}/uploads/pages/newussd4.png 1440w"
+                src="{{ site.url }}/uploads/pages/newussd4.png" alt="{{ item.title }}">
+
+            <!-- <video src="{{ page.small_right_image }}" width="350px" height="700px" type="video/mp4" controls></video> 
+            <video muted="" playsinline="" class="" autoplay="" src="/uploads/videos/eyowo-mobile.gif"
+                style="visibility: visible;"></video> -->
+        </div>
+    </section>
+{% endif %}
+
+
+{% if page.small_left %}
+    <section class="maxwidth-lt mx-auto clearfix switch">
+        <div class="right-70 wrapper-x d-flx flex-dir-col min-h-500 j-c-c">
+            <h1>{{ page.small_left_title }}</h1>
+            {% if page.small_left_description %}
+                {{ page.small_left_description | markdownify }}
+            {% endif %}
+            {% if page.small_left_apps %}
+                <div class="grid-2 gg width-280">
+                    {% for item in page.small_left_apps %}
+                        <a href="{{ item.link }}" class="d-blk">
+                            <img src="{{ item.image | prepend: site.url }}" alt="">
+                        </a>
+                    {% endfor %}
+                </div>
+            {% endif %}
+        </div>
+        <div class="left-30 wrapper-x d-flx flex-dir-col j-c-c al-i-c">
+            <img src="{{ page.small_left_video | prepend: site.url }}" alt="{{ item.title }}" style="max-width:296px">
+            <!-- <figure>
+                <video src="{{ page.small_left_video }}" width="350px" height="700px" type="video/mp4" controls>
+                </video>
+                <video muted="" playsinline="" class="" autoplay="" src="https://www.apple.com/105/media/us/apple-pay/2017/1b3e5430_fafc_4e9d_8114_4ba5eacf00f4/overview/apple-pay/medium_2x.mp4" style="visibility: visible;"></video>  
+            </figure> -->
+        </div>
+    </section>
+{% endif %}
+
+
+{% if page.center_content %}
+    <section class="maxwidth-tb mx-auto clearfix">
+        <div class="wrapper d-flx flex-dir-col j-c-c al-i-c">
+            <h1>{{ page.center_content_title | markdownify }}</h1>
+            <div>
+                <a href="https://app.eyowo.com" class="d-ibl" target="blank"><button class="eyowo-button-white bg-primary radius-50">Visit My Eyowo <span class="suffix">{% include tools/icons.html icon="chevron-right" %}</span></button></a>
+            </div>
+            <img src="{{ site.url }}/uploads/pages/desktop.svg" alt="{{ item.title }}">
+            <!-- <video type="video/mp4" src="{{ page.center_content_video }}" muted loop></video> -->
+            <!-- <figure>
+                <video src="{{ page.center_content_video }}" type="video/mp4" width="1000px" controls>
+                </video>
+                <video muted="" playsinline="" class="" autoplay="" src="https://res.cloudinary.com/softcomux/video/upload/v1534238201/eyw-web/videos/eyowo-merchant-video.mp4"
+                    style="visibility: visible;"></video>
+            </figure> -->
+        </div>
+    </section>
+{% endif %}
+
+
+{% if page.list %}
+    <section class="maxwidth-tb mx-auto clearfix">
+        <div class="wrapper d-flx flex-dir-col j-c-c al-i-c">
+            <ul class="none ">
+                {% for item in page.list %}
+                    <h4>{{ item.title }}</h4>
+                    {{ item.body | markdownify }}
+                {% endfor %}
+            </ul>
+        </div>
+    </section>
+{% endif %}
+
+
+{% if page.title == "Eyowo as a Business" %}
+    <section class="width-100-pc">
+        <div class="maxwidth-tb mx-auto wrapper">
+            <div class="p-2">
+                <ul class="carousel none" data-flickity='{ "autoPlay": 6000, "adaptiveHeight": true, "contain": true, "prevNextButtons": false, "pageDots": true, "wrapAround": true}'>
+                    {% for item in page.testimonial %}
+                        <li class="w-100 d-flx tx-c flex-dir-col al-i-c j-c-c">
+                            {% include tools/icons.html icon="quote" %}
+                            <p class="wrapper-y microtext"><i>{{ item.text }}</i></p>
+                            <!-- <img class="avatar radius-c mx-auto" src="{{ item.image }}" alt=""> -->
+                            <img srcset="{{ item.image1 | prepend: site.url }} 576w,
+                                        {{ item.image2 | prepend: site.url }} 768w,
+                                        {{ item.image3 | prepend: site.url }} 960w,
+                                        {{ item.image4 | prepend: site.url }} 1440w"
+                                src="{{ item.image4 | prepend: site.url }}" class="avatar radius-c mx-auto" alt="">
+                            <p class="mb-0 mt-1"><strong>{{ item.name }}</strong></p>
+                            <p><i>{{ item.address }}</i></p>
+                        </li>
+                    {% endfor %}
+                </ul>
+            </div>
+        </div>
+    </section>
+{% endif %}
+
+
+{% if page.is_blog %}
+    <section class="width-100-pc py-2 bg-gray  ">
+        <div class="maxwidth-sl mx-auto wrapper">
+            <div class="grid is-multi-col mostly-3">
+                {% for post in paginator.posts %}
+                    {% include components/blog-post.html %}
+                {% endfor %}
+            </div>
+            <div class="pagination py-3 d-flx j-c-sb">
+                {% if paginator.previous_page %}
+                    <div>
+                        <a href="{{ paginator.previous_page_path | prepend: site.url }}" class="previous">
+                            <div class="d-flx j-c-c al-i-c"> 
+                                <span class="nanotext prefix">
+                                    {% include tools/icons.html icon="arrow-left" %}
+                                </span> Previous
+                            </div>
+                        </a>
+                    </div>
+                {% endif %}
+                <div>
+                    <span class="page_number prefix suffix is-wider">
+                        Page: {{ paginator.page }} of {{ paginator.total_pages }}
+                    </span>
+                </div>
+                {% if paginator.next_page %}
+                    <div>
+                        <a href="{{ paginator.next_page_path | prepend: site.url }}" class="next">
+                            <div class="d-flx j-c-c al-i-c">
+                                Next <span class="nanotext suffix">
+                                    {% include tools/icons.html icon="arrow-right" %}
+                                </span>
+                            </div>
+                        </a>
+                    </div>
+                {% endif %}
+            </div>
+        </div>
+    </section>
+{% endif %}
+
+
+
+{% include lists/mobile-experience.html %}
+
+
+
+{% if page.has_video_link %}
+    <div id="myModal" class="video-modal">
+
+        <div class="video-content p-2">
+            <span class="video-close">&times;</span>
+            <div>
+                <iframe class="modal-iframe" width="100%" src="" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+            </div>
+        </div>
+        
+    </div>
+{% endif %}

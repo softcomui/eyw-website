@@ -1,0 +1,92 @@
+// 
+    // Colors
+
+    // @package eyw
+    // @author  Kabolobari Benakole <i@kb.life>
+
+// Colors
+.co-primary
+    color:              $primarycolor
+.co-sweetgray
+    color:              $sweetgray
+.co-readablegray
+    color:              $readablegray
+.co-richblack
+    color:              $richblack
+.co-white
+    color:              #ffffff
+.co-whitesmoke
+    color:              rgba(255,255,255,0.7)
+.is-required
+    color:              red
+.co-extra
+    color:              #476C9B
+
+// Backgrounds
+.bg-image
+    width:              100%
+    height:             100%
+    z-index:            2
+
+.bg-big-gradient
+    width:              100%
+    height:             100%
+    z-index:            5
+    background: rgba(33,33,33,0.62)
+    background: -moz-linear-gradient(left, rgba(33,33,33,0.62) 0%, rgba(33,33,33,0.61) 0%, rgba(0,0,0,0.72) 100%)
+    background: -webkit-gradient(left top, right top, color-stop(0%, rgba(33,33,33,0.62)), color-stop(0%, rgba(33,33,33,0.61)), color-stop(100%, rgba(0,0,0,0.72)))
+    background: -webkit-linear-gradient(left, rgba(33,33,33,0.62) 0%, rgba(33,33,33,0.61) 0%, rgba(0,0,0,0.72) 100%)
+    background: -o-linear-gradient(left, rgba(33,33,33,0.62) 0%, rgba(33,33,33,0.61) 0%, rgba(0,0,0,0.72) 100%)
+    background: -ms-linear-gradient(left, rgba(33,33,33,0.62) 0%, rgba(33,33,33,0.61) 0%, rgba(0,0,0,0.72) 100%)
+    background: linear-gradient(to right, rgba(33,33,33,0.62) 0%, rgba(33,33,33,0.61) 0%, rgba(0,0,0,0.72) 100%)
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#212121', endColorstr='#000000', GradientType=1 )
+
+.bg-gradient
+    width:              100%
+    height:             100%
+    z-index:            5
+    background: rgba(0,0,0,0.8)
+    background: rgba(77,56,28,0.9)
+    background: -moz-linear-gradient(left, rgba(77,56,28,0.9) 0%, rgba(77,56,28,0.91) 0%, rgba(0,0,0,0.9) 100%)
+    background: -webkit-gradient(left top, right top, color-stop(0%, rgba(77,56,28,0.9)), color-stop(0%, rgba(77,56,28,0.91)), color-stop(100%, rgba(0,0,0,0.9)))
+    background: -webkit-linear-gradient(left, rgba(77,56,28,0.9) 0%, rgba(77,56,28,0.91) 0%, rgba(0,0,0,0.9) 100%)
+    background: -o-linear-gradient(left, rgba(77,56,28,0.9) 0%, rgba(77,56,28,0.91) 0%, rgba(0,0,0,0.9) 100%)
+    background: -ms-linear-gradient(left, rgba(77,56,28,0.9) 0%, rgba(77,56,28,0.91) 0%, rgba(0,0,0,0.9) 100%)
+    background: linear-gradient(to right, rgba(77,56,28,0.9) 0%, rgba(77,56,28,0.91) 0%, rgba(0,0,0,0.9) 100%)
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#4d381c', endColorstr='#000000', GradientType=1 )
+
+.bg-primary
+    background-color:   $primarycolor
+.bg-comp
+    background-color:   $compcolor
+.bg-gray
+    background-color:   #f9f9f9
+.bg-white
+    background-color:   #ffffff
+.white-bg
+    background-color:   #ffffff
+.bg-platinum
+    background-color:   $platinum
+.bg-gainsboro
+    background-color:   $gainsboro
+.bg-rich-black
+    background-color:   $richblack
+.bg-bdark
+    background-color:   rgba(21,21,21,0.8)
+.bg-branddark
+    background-color:   $branddark
+    &.alter-text
+        .h, p, a
+            color:      #ffffff
+        p
+            opacity:    0.7
+        a:not(.opacity-1-link)
+            @extend .opacity-7-link
+
+
+.border-bottom
+    border-bottom: 0.5px solid rgba(255,255,255,0.4)
+
+// Opacity
+.opacity-7
+    opacity:            0.7

@@ -1,0 +1,77 @@
+// 
+    // Measures
+
+    // @package eyw
+    // @author  Kabolobari Benakole <i@kb.life>
+
+// Widths
+.maxwidth-xl
+    max-width:          $maxwidth-xl
+.maxwidth-sl
+    max-width:          $maxwidth-sl
+.maxwidth-lt
+    max-width:          $maxwidth-lt
+.maxwidth-tb
+    max-width:          $maxwidth-tb
+.maxwidth-sm
+    max-width:          $maxwidth-sm
+.maxwidth-xs
+    max-width:          $maxwidth-xs
+.maxwidth-xxs
+    max-width:          $maxwidth-xxs
+
+.w-100
+    width:              100%
+
+.half-width-plus
+    max-width:          50%
+    min-height:         300px
+    img
+        height:         300px
+        oject-fit:      cover
+    @media #{ $mediumdown }
+        max-width:      100%
+        min-height:     200px
+        img
+            height:     200px
+.width-280
+    max-width:          280px
+
+// Heights
+.height-100-pc
+    height:             100%
+
+.min-height-100-vh
+    min-height:         65vh
+    @media #{$mediumup}
+        min-height:         100vh
+.height-100-vh
+    height:             100vh
+    
+.desired-height
+    height:             392px
+    @media #{$smallup}
+        height:         592px
+.desired-height-3qtr
+    height:             264px
+    @media #{$smallup}
+        height:         392px
+.min-h-500
+    min-height:         650px
+    @media #{ $mediumdown }
+        min-height:     120px
+        text-align:     center
+        align-items:    center
+
+.min-h-400
+    min-height:         650px
+    @media #{ $mediumdown }
+        min-height:     400px
+        text-align:     center
+        align-items:    center
+
+.min-h-300
+    height:         500px
+    @media #{ $mediumdown }
+        height:     350px
+        text-align:     center

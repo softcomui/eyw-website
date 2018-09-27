@@ -1,0 +1,58 @@
+// 
+    // Images
+
+    // @package eyw
+    // @author  Kabolobari Benakole <i@kb.life>
+
+.adjust-fit
+    height:                 100%
+
+.post-content
+    figure
+        margin:             $space-sm calc(-50vw + 50%)
+        padding:            $space
+        background-color:   $platinum
+        @media #{$smallup}
+            margin:         $space-md 0
+        img
+            margin-bottom:  $space
+        &.none
+            margin:             unset
+            padding-top:        unset
+            padding-right:      unset
+            padding-left:       unset
+            background-color:   unset
+
+.eyowo-image
+    img
+        height: 80vh
+        object-fit: contain
+
+.avatar
+    width:                  100px
+    height:                 100px
+    object-fit:             cover
+
+.small-avatar
+    width:                  50px
+    height:                 50px
+    object-fit:             cover
+
+.logo-contain
+    height:                 40px
+    object-fit:             contain
+
+
+.carousel-cell
+    width:                  100%
+
+.blog-feature-image
+    height:                 200px
+
+
+
+// Responsive videos
+video
+    width:                  100%
+    max-width:              $maxwidth-sm
+    height:                 auto        

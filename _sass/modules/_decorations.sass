@@ -1,0 +1,97 @@
+// 
+    // Decorations
+
+    // @package eyw
+    // @author  Kabolobari Benakole <i@kb.life>
+
+.borderline-top
+    border-top:         $borderline
+.list-border
+    border-bottom:      $borderline
+    &:last-of-type
+        border-bottom:  0
+
+.separator
+    margin:             0 $space-xxs
+    &::after
+        content:        '\00B7'
+        color:          inherit
+
+
+.cardshadow
+    box-shadow:         $brashboxshadow
+.bottomshadow
+    box-shadow:         0px 2px 12px 0px rgba(0,0,0,0.05)
+
+.gradient-from-left
+    background: rgba(240,240,240,1)
+    background: -moz-linear-gradient(left, rgba(240,240,240,1) 0%, rgba(255,255,255,0) 100%)
+    background: -webkit-gradient(left top, right top, color-stop(0%, rgba(240,240,240,1)), color-stop(100%, rgba(255,255,255,0)))
+    background: -webkit-linear-gradient(left, rgba(240,240,240,1) 0%, rgba(255,255,255,0) 100%)
+    background: -o-linear-gradient(left, rgba(240,240,240,1) 0%, rgba(255,255,255,0) 100%)
+    background: -ms-linear-gradient(left, rgba(240,240,240,1) 0%, rgba(255,255,255,0) 100%)
+    background: linear-gradient(to right, rgba(240,240,240,1) 0%, rgba(255,255,255,0) 100%)
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f0f0f0', endColorstr='#ffffff', GradientType=1 )
+
+.gradient-from-right
+    background: rgba(240,240,240,0)
+    background: -moz-linear-gradient(left, rgba(240,240,240,0) 0%, rgba(240,240,240,1) 100%)
+    background: -webkit-gradient(left top, right top, color-stop(0%, rgba(240,240,240,0)), color-stop(100%, rgba(240,240,240,1)))
+    background: -webkit-linear-gradient(left, rgba(240,240,240,0) 0%, rgba(240,240,240,1) 100%)
+    background: -o-linear-gradient(left, rgba(240,240,240,0) 0%, rgba(240,240,240,1) 100%)
+    background: -ms-linear-gradient(left, rgba(240,240,240,0) 0%, rgba(240,240,240,1) 100%)
+    background: linear-gradient(to right, rgba(240,240,240,0) 0%, rgba(240,240,240,1) 100%)
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f0f0f0', endColorstr='#f0f0f0', GradientType=1 )
+
+
+.bg-home-business
+    background-color: $richblack
+    @media #{ $mediumup }
+        background-image: url('/uploads/pages/merchant.svg')
+        background-size: cover
+        background-repeat: no-repeat
+        background-position: center center
+
+
+.stacked-tile
+    position:               relative
+    display:                flex
+    flex-direction:         column
+    z-index:                0
+    @media #{$mediumup}
+        padding:            0 $space
+    .img-holder
+        max-width:          100%
+        z-index:            1
+        img
+            height:         336px
+            @media #{$smallup}
+                height:         392px
+        @media #{$mediumup}
+            width:          100%
+    .stacked-tile-body
+        z-index:            0
+        margin-top:         -4rem
+        padding-top:        6rem!important
+        @media #{$mediumup}
+            margin-top:     4rem
+            padding-top:    0
+            
+    @media #{$mediumup}
+        flex-direction:     row
+        &.leftpic
+            .stacked-tile-body
+                margin-left:    -4rem
+                padding-left:   6rem!important
+        &.rightpic
+            .img-holder
+                order:          2
+            .stacked-tile-body
+                margin-right:   -4rem
+                padding-right:  6rem!important
+
+
+
+.by-w
+    border-bottom:              0.5px solid #fff
+    border-top:                 0.5px solid #fff

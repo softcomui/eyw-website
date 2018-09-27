@@ -1,0 +1,10 @@
+{% capture words %}
+    {% if page.layout == 'single' %}
+        {{ page.content | number_of_words | minus: 180 }}
+    {% else %}
+        {{ item.content | number_of_words | minus: 180 }}
+    {% endif %}
+{% endcapture %}
+{% unless words contains '-' %}
+    {{ words | plus: 180 | divided_by: 180 | append: ' min read' }}
+{% endunless %}
