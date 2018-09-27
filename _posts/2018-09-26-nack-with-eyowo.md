@@ -12,7 +12,7 @@ feature_image4: '/uploads/nack/praiz-4.jpg'
 ---
 
 
-Sunday 16th of September was abuzz with activity as nack (Nigerian Articulate Culture Kullection) Apparel launched its Interlude Kullection, powered by Eyowo. 
+Sunday 16th of September was abuzz with activities as NACK (Nigerian Articulate Culture Kullection) Apparel launched its Interlude Kullection, powered by Eyowo. 
 
 Interlude, described as ‘FEARLESS’ was inspired by utilitarianism, consisting of carefully crafted pieces that incorporates pleated and embellished jerseys, edgy military straps and digital art of  native culture. 
 
@@ -20,7 +20,7 @@ Since Eyowo is created  to be embroidered into the lifestyle of its user, we fou
 
 Furnished with the Eyowo Experience Booth, we engaged each guest and watched as they re-imagined their phones as payment platforms using Eyowo. 
 
-Here’s how it all panned out; After they funded their Eyowo account, each client browsed through the nack Kullection in display.
+Here’s how it all panned out; After they funded their Eyowo account, each client browsed through the NACK Kullection in display.
 
 Each guest that interacted with the product stood a chance of winning 1 Samsung s9 and other Samsung accessories. A crowd pleaser was definitely the experience of “paying” for their meals with an actual cowrie. It’s not often technology gets to rub shoulders with an old timer like that. 
 
@@ -64,7 +64,7 @@ Relive  the moments below:
 
 ![](/uploads/nack/nack02.jpg)
 
-All in all, the nack X Eyowo was such a huge success which has further triggered our thirst for even more amazing and fun-packed Eyowo events.
+All in all, the NACK X Eyowo partnership was such a huge success which has further triggered our thirst for even more amazing and fun-packed Eyowo events.
 
 
 
