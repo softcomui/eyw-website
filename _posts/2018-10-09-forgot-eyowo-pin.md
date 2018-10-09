@@ -3,12 +3,12 @@ title: Help! I forgot my Eyowo PIN
 date: 2018-10-09
 topic: Business
 author: Benjamin Dada
-username: benjamin
+username: ben
 comments: true
-feature_image1: '/uploads/blog/forgot-pin.png'
-feature_image2: '/uploads/blog/forgot-pin-01.png'
-feature_image3: '/uploads/blog/forgot-pin-02.png'
-feature_image4: '/uploads/blog/forgot-pin-03.png'
+feature_image1: '/uploads/blog/forgot-pin-03.png'
+feature_image2: '/uploads/blog/forgot-pin-02.png'
+feature_image3: '/uploads/blog/forgot-pin-01.png'
+feature_image4: '/uploads/blog/forgot-pin.png'
 ---
 
 Lagos, Nigeria - It was a Monday morning (September 3, 2018) in Lagos and Ciroma Chukwuma Adekunle had an interview at Softcom Limited. 
